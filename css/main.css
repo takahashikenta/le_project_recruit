@@ -4,8 +4,7 @@
 /* 基本設定 */
 /* 基本設定：カラー */
 :root{
-  --icon-color:#fff;
-  --icon-bk-color:#01044E;
+
 }
 /* 基本設定：フォントサイズ */
 @media(max-width: 599px){
@@ -118,7 +117,7 @@ header .container{
 
 
 /* test */
-body, html, main {
+body, html {
     /* important */
     height: 100%;
 }
@@ -133,25 +132,67 @@ background-position: center center;
 
 .cd-fixed-bg.cd-bg-1{
 background-image: url("../img/plane.jpeg");
-height: 100%;
+opacity: 0.8;
 }
-.cd-scrolling-bg {
-min-height: 100%;
+
+.cd-fixed-bg.cd-bg-1 h1{
+  padding-top: 200px;
+  text-align: center;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
 }
+
+
+
 
 
 /* main */
 .main{
   background: ;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin-right: 120px;
+  margin-left: 120px ;
+}
+.main h1{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: 50px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 
+  padding-bottom:150px;
 }
 
 .main h3{
-  padding-bottom: 20px;
+  padding-bottom: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: 25px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
-.main .icon{
+.link_content2 h3{
+  padding-bottom: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+
+.main .icon1{
   display: inline-block;
   margin-bottom: 20px;
   font-size: 45px;
@@ -159,20 +200,48 @@ min-height: 100%;
   line-height: 2em;
   border-radius: 50%;
   text-align: center;
-  background-color: #ddd;
-  background-color: var(--icon-bk-color);
-  color:#fff;
-  color: var (--icon-color);
+  background-color: #01044E;
+  color: #fff;
 }
 
-.main .col-md-4{
+.main .icon2{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 45px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
   text-align: center;
-  margin-left: 20px;
+  background-color: #fff;
+  color: #01044E;
+}
+
+.main .link_content1{
+  text-align: center;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 20px;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 20px;
-  border: solid 5px #01044E;
+  border: solid 4px #01044E;
+}
+
+.main .link_content2{
+  background-color: #01044E;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border: solid 4px #01044E;
 }
 
 
