@@ -116,7 +116,7 @@ header .container{
 }
 
 
-/* test */
+/* con insta */
 body, html {
     /* important */
     height: 100%;
@@ -146,9 +146,6 @@ opacity: 0.8;
   font-weight: bold;
   text-align: center;
 }
-
-
-
 
 
 /* main */
@@ -245,44 +242,57 @@ opacity: 0.8;
 }
 
 
-/* ConA */
-.conA{
-  background: ;
-  padding-top: 50px;
-  padding-bottom: 30px;
+/* con insta */
+
+
+
+/* con_recruit */
+.con_recruit{
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin-right: 120px;
+  margin-left: 120px;
 }
 
-.conA h1{
-  padding-top: 0px;
-  padding-bottom: 50px;
+.con_recruit h1{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: 50px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
   text-align: center;
+  padding-top: 
+  padding-bottom:150px;
+}
+
+.con_recruit .table{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.con_recruit tr{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.con_recruit td{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.con_recruit tbody{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
   font-size: px;
-}
-
-.conA span{
-  color:#01044E; 
-  font-size:px;
-}
-
-.conA .icon{
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 45px;
-  width: 2em;
-  line-height: 2em;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #ddd;
-  background-color: var(--icon-bk-color);
-  color:#fff;
-  color: var (--icon-color);
-}
-
-.conA .col-md-4{
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 60px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding-top: 
+  padding-bottom:150px;
 }
 
 
@@ -415,10 +425,7 @@ opacity: 0.8;
 
 /* footer */
 footer{
-  color: #fff;
-  color: var(--text-bright-color);
-  background-color: #2B5566;
-  background-color: var(--dark-main-color);
+  color: #01044E;
 }
 
 footer .container{
@@ -427,10 +434,38 @@ footer .container{
 
 /*footerA：サイト情報*/
 .footA h2{
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 30px;
+  font-size: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   letter-spacing: em;
+  font-weight: bold;
+}
+
+.footA p{
+  font-size: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  letter-spacing: em;
+  font-weight: bold;
+}
+
+.footB h3{
+  font-size: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  letter-spacing: em;
+  font-weight: bold;
+}
+
+.footB a{
+  font-size: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  letter-spacing: em;
+  font-weight: bold;
+}
+
+.footC {
+  font-size: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  letter-spacing: em;
+  font-weight: bold;
 }
 
 .footer p{
