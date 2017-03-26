@@ -116,7 +116,143 @@ header .container{
 }
 
 
-/* con insta */
+/* main_1 */
+.main_tittle{
+  height: 300px;
+  text-align: center;
+  background-color: #01044E;
+  color: #fff; 
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.main_tittle h1{
+  margin: 100px;
+  font-size: 60px;
+}
+
+.main_tittle span {
+  font-size: 80px;
+}
+
+
+/* 練習(TEST) */
+.listA .container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: none;
+  margin: 2px auto;
+}
+
+.listA article{
+  flex: 1 1 250px;
+  display: flex;
+}
+
+.listA a{
+  position: relative;
+  flex: 1;
+  margin: 2px;
+  display: block;
+  border: solid 1px #ddd;
+  background-color: currentColor;
+  text-decoration: none;
+}
+
+.listA a:hover{
+  opacity: 0.8;
+}
+
+.listA .photo{
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.listA .text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: #fff;
+}
+
+.listA h2{
+  margin: 0;
+  font-size: 18px;
+}
+
+.listA p{
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8
+}
+
+
+/* main_2 */
+.main_word{
+  padding-top: 50px;
+}
+
+
+/* main_menu */
+.main_menu{
+  background: ;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin-right: 120px;
+  margin-left: 120px ;
+}
+.main_menu h1{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: 50px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 
+  padding-bottom:150px;
+}
+
+.main_menu h3{
+  padding-bottom: px;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: 25px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.main_menu .icon{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 45px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #01044E;
+  color: #fff;
+}
+
+.main_menu .link_content{
+  text-align: center;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border: solid 4px #01044E;
+}
+
+
+
+/* con_insta */
 body, html {
     /* important */
     height: 100%;
@@ -146,104 +282,6 @@ opacity: 0.8;
   font-weight: bold;
   text-align: center;
 }
-
-
-/* main */
-.main{
-  background: ;
-  padding-top: 70px;
-  padding-bottom: 100px;
-  margin-right: 120px;
-  margin-left: 120px ;
-}
-.main h1{
-  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-  color: #01044E;
-  font-size: 50px;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 
-  padding-bottom:150px;
-}
-
-.main h3{
-  padding-bottom: px;
-  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-  color: #01044E;
-  font-size: 25px;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-.link_content2 h3{
-  padding-bottom: px;
-  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-  color: #fff;
-  font-size: 25px;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-
-.main .icon1{
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 45px;
-  width: 2em;
-  line-height: 2em;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #01044E;
-  color: #fff;
-}
-
-.main .icon2{
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 45px;
-  width: 2em;
-  line-height: 2em;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #fff;
-  color: #01044E;
-}
-
-.main .link_content1{
-  text-align: center;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  border: solid 4px #01044E;
-}
-
-.main .link_content2{
-  background-color: #01044E;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  border: solid 4px #01044E;
-}
-
-
-/* con insta */
-
 
 
 /* con_recruit */
@@ -279,9 +317,9 @@ opacity: 0.8;
 }
 
 .con_recruit td{
-  border-style : solid;
-  border-width: 4px;
-  border-color :#01044E;
+  border-style : solid !important;
+  border-width: 4px !important;
+  border-color :#01044E !important; 
 }
 
 .con_recruit tbody{
@@ -523,7 +561,7 @@ footer .container{
   }
 
   .footB{
-    flex: 0 0 60%;
+    flex: 0 0 59%;
   }
 
   .footC{
