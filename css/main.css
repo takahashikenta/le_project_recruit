@@ -139,7 +139,7 @@ header .container{
 .listA .container{
   display: flex;
   flex-wrap: wrap;
-  max-width: none;
+  max-width: 100%;
   margin: 2px auto;
 }
 
@@ -185,9 +185,17 @@ header .container{
 .listA p{
   margin: 0;
   font-size: 14px;
-  opacity: 0.8
+  opacity: 0.8;
 }
 
+@media (min-width: 1000px){
+  .listA article{
+    flex: 1 1 25%;
+  }
+  .listA article:nth-child(4n+1){
+    flex: 1 1 50%;
+  }
+}
 
 /* main_2 */
 .main_word{
