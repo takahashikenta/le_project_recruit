@@ -119,7 +119,7 @@ header .container{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;　/* main_tittleの高さ設定 */
+  height: 120px;　/* main_tittleの高さ設定 */
   min-height: 0px;
   text-align: center;
   background-color: #01044E;
@@ -130,22 +130,20 @@ header .container{
 }
 
 .main_tittle h1{
-font-weight: bold;
 margin-top: 0;
 margin-bottom: 10px;
-font-size: 13vw;
+font-size: 15vw;
 letter-spacing: 0.1em;
 margin-left: 0.1em;
 }
 
 .main_tittle span {
-  font-weight: bold;
-  font-size: 13vw;
+  font-size: 15vw;
 }
 
 @media (min-width: 768px){
 .main_tittle h1{
-  font-size: 60px;
+  font-size: 50px;
 }
 .main_tittle span {
   font-size: 80px;
@@ -153,7 +151,7 @@ margin-left: 0.1em;
 }
 
 
-/* 練習(TEST) */
+/* main_1 */
 .listA .container{
   display: flex;
   flex-wrap: wrap;
@@ -181,10 +179,10 @@ margin-left: 0.1em;
 }
 
 .listA .photo{
-  min-height: 300px;
+  min-height: 250px;
   background-position: center;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7; /* main写真の透明度 */
 }
 
 .listA .text{
@@ -210,7 +208,12 @@ margin-left: 0.1em;
   .listA article{
     flex: 1 1 25%;
   }
+
+  .listA article:nth-child(7n+1){
+    flex: 1 1 50%;
+  }
 }
+
 
 /* main_2 */
 .main_word{
@@ -221,8 +224,8 @@ margin-left: 0.1em;
 /* main_menu */
 .main_menu{
   background: ;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   margin-right: 120px;
   margin-left: 120px ;
 }
@@ -275,23 +278,22 @@ margin-left: 0.1em;
 
 
 
-/* con_insta */
+/* 削除するかも 
 body, html {
-    /* important */
-    height: 100%;
+  height: 100%;
 }
 
 .cd-fixed-bg {
-min-height: 100%;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-position: center center;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .cd-fixed-bg.cd-bg-1{
-background-image: url("../img/plane.jpeg");
-opacity: 0.8;
+  background-image: url("../img/plane.jpeg");
+  opacity: 0.8;
 }
 
 .cd-fixed-bg.cd-bg-1 h1{
@@ -304,10 +306,200 @@ opacity: 0.8;
   letter-spacing: 0.1em;
   font-weight: bold;
   text-align: center;
+} */
+
+
+/* about_recruit (採用について) */
+.about_recruit .container{
+  color: #01044E;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+}
+
+.about_recruit h1{
+  font-weight: bold;
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+
+.about_recruit p{
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+@media (min-width: 599px){
+  .about_recruit .container{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+  .about_recruit .container{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px){
+  .about_recruit .container{
+    font-size: 18px;
+  }
 }
 
 
-/* con_recruit */
+/* requirement (募集要項) */
+.requirement .tittle{
+  color: #01044E;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.requirement .container{
+  color: #01044E;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+}
+
+.requirement h1{
+  font-weight: bold;
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  text-align: center;
+  padding-bottom: px;
+  font-size: 2rem;
+}
+
+.requirement p{
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.requirement .table{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.requirement tr{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.requirement td{
+  border-style : solid !important;
+  border-width: 4px !important;
+  border-color :#01044E !important; 
+}
+
+.requirement tbody{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: px;
+  font-weight: bold;
+}
+
+@media (min-width: 599px){
+  .requirement .container{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+  .requirement .container{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px){
+  .requirement .container{
+    font-size: 18px;
+  }
+}
+
+
+/* support (成長支援) */
+.support .tittle{
+  color: #01044E;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support .container{
+  color: #01044E;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+}
+
+.support h1{
+  font-weight: bold;
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  text-align: center;
+  padding-bottom: px;
+  font-size: 2rem;
+}
+
+.support p{
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.support .table{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.support tr{
+  border-style : solid;
+  border-width: 4px;
+  border-color :#01044E;
+}
+
+.support td{
+  border-style : solid !important;
+  border-width: 4px !important;
+  border-color :#01044E !important; 
+}
+
+.support tbody{
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #01044E;
+  font-size: px;
+  font-weight: bold;
+}
+
+@media (min-width: 599px){
+  .support .container{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+  .support .container{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px){
+  .support .container{
+    font-size: 18px;
+  }
+}
+
+
+/* ??? */
 .con_recruit{
   padding-top: 70px;
   padding-bottom: 100px;
