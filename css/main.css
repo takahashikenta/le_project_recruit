@@ -182,7 +182,14 @@ margin-left: 0.1em;
   min-height: 250px;
   background-position: center;
   background-size: cover;
-  opacity: 0.7; /* main写真の透明度 */
+  opacity: 0.8; /* main写真の透明度 */
+}
+
+.listA .photo1{
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+  opacity: 1.0; /* main写真の透明度 */
 }
 
 .listA .text{
@@ -192,6 +199,18 @@ margin-left: 0.1em;
   margin: 10px;
   color: #fff;
 }
+
+.listA .text2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: #01044E;
+  font-weight: bold;
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+
 
 .listA h2{
   margin: 0;
@@ -209,7 +228,7 @@ margin-left: 0.1em;
     flex: 1 1 25%;
   }
 
-  .listA article:nth-child(7n+1){
+  .listA article:nth-child(6n+1){
     flex: 1 1 50%;
   }
 }
@@ -278,7 +297,7 @@ margin-left: 0.1em;
 
 
 
-/* 削除するかも 
+/* 削除するかも */
 body, html {
   height: 100%;
 }
@@ -292,7 +311,7 @@ body, html {
 }
 
 .cd-fixed-bg.cd-bg-1{
-  background-image: url("../img/plane.jpeg");
+  background-image: url("../img/background_test1.jpg");
   opacity: 0.8;
 }
 
@@ -306,7 +325,7 @@ body, html {
   letter-spacing: 0.1em;
   font-weight: bold;
   text-align: center;
-} */
+} 
 
 
 /* about_recruit (採用について) */
