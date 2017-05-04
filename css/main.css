@@ -328,6 +328,63 @@ body, html {
 } 
 
 
+/* company (ライブエストについて) */
+.company .tittle{
+  padding-bottom: 30px;
+  color: #01044E;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company h1{
+  font-weight: bold;
+  font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  text-align: center;
+  padding-bottom: px;
+  font-size: 2rem;
+}
+
+.company h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.company p{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.company .icon{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #01044E;
+  color: #fff;
+}
+
+.company .text{
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .company .container{
+    display: flex;
+  }
+  .company .text{
+    flex: 1;
+  }
+}
+
+
 /* about_recruit (採用について) */
 .about_recruit .container{
   color: #01044E;
@@ -565,41 +622,6 @@ body, html {
   font-weight: bold;
   padding-top: 
   padding-bottom:150px;
-}
-
-
-/* ConB */
-.conB{
-  padding-top: 50px;
-  padding-bottom: px;
-}
-
-.conB h1{
-  padding-top: 0px;
-  padding-bottom: 30px;
-  text-align: center;
-  font-size: ;
-}
-
-.conB span{
-  color:#01044E; 
-  font-size:px;
-}
-
-/* スライド */
-.carousel{
-  height: 300px;
-  margin:auto;
-}
-
-  /* 大きい画面サイズ用 */
-@media (min-width: 768px) {
-  .carousel,
-  .carousel .item,
-  .carousel .item-mask,
-  .carousel-inner .item .item-mask img {
-    height: 600px;
-  }
 }
 
 
