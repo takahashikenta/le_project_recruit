@@ -338,6 +338,7 @@ body, html {
 }
 
 .company h1{
+  text-decoration: underline;
   font-weight: bold;
   font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   text-align: center;
@@ -406,6 +407,7 @@ body, html {
 }
 
 .about_recruit h1{
+  text-decoration: underline;
   font-weight: bold;
   font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   text-align: center;
