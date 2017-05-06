@@ -227,8 +227,8 @@ margin-left: 0.1em;
   .listA article{
     flex: 1 1 25%;
   }
-
-  .listA article:nth-child(6n+1){
+/* main写真の透明度 */
+  .listA article:nth-child(5n+3){
     flex: 1 1 50%;
   }
 }
@@ -328,9 +328,9 @@ body, html {
 } 
 
 
-/* company (ライブエストについて) */
+/* company (LIVEESTの仕事) */
 .company .tittle{
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   color: #01044E;
   max-width: 1100px;
   margin-left: auto;
@@ -362,7 +362,7 @@ body, html {
 .company .icon{
   display: inline-block;
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 50px;
   width: 2em;
   line-height: 2em;
   border-radius: 50%;
@@ -378,9 +378,20 @@ body, html {
 @media (min-width: 768px){
   .company .container{
     display: flex;
+    padding-bottom: 30px;
   }
   .company .text{
     flex: 1;
+  }
+  .company h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #01044E;
+  }
+
+  .company p{
+    font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -573,6 +584,33 @@ body, html {
     font-size: 18px;
   }
 }
+
+
+/* 社員Interview */
+.cd-fixed-bg2 {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg2.cd-bg-2{
+  background-image: url("../img/menber_Interview_test.jpg");
+  opacity: 0.9;
+}
+
+.cd-fixed-bg2.cd-bg-2 h1{
+  padding-top: 200px;
+  text-align: center;
+  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+} 
 
 
 /* ??? */
