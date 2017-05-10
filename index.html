@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ライブエスト リクルート</title>
+    <title>株式会社ライブエスト リクルート</title>
 
+
+  <!-- CSSファイル -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main.css -->
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <!-- h2vR（縦書き） -->
+    <!-- h2vR (縦書き)-->
     <link href="css/h2vR.css" rel="stylesheet" type="text/css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!--light_box-->
+    <!-- light_box -->
     <link rel="stylesheet" href="css/featherlight.css" media="all">
-    <!-- icon -->
-    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
+    <!-- Chart.js -->
+    <link href="css/chart.css" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -129,6 +132,7 @@
           <p>テクニカルソリューション事業部</p>
           <p>事業部長</p>
         </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
@@ -163,15 +167,18 @@
           <p>ITソリューション事業部</p>
           <p>エンジニア</p>
         </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/requirement3.jpg);">
+        <div class="photo" style="background-image: url(img/tarukawa2.jpg);">
         </div>
-        <div class="text">
-          <h2>募集要項</h2>
+        <div class="text2">
+          <h2>Tarukawa Shota</h2>
+          <p>ITソリューション事業部</p>
+          <p>エンジニア</p>
         </div>
         </a>
         </article>
@@ -749,6 +756,27 @@
   </section>
 
 
+  <!-- 社員アンケート (Chart.js) -->
+  <section class="questionnaire">
+    <div class="container">
+      <div class="chart">
+        <canvas id="myChart" width="200" height="200"></canvas>
+        <div class="count">
+            <em>79</em>
+            <span class="caption">%</span>
+        </div>
+      </div>
+
+      <div class="chart" id="chart2">
+        <canvas id="myChart2" width="200" height="200"></canvas>
+        <div class="count">
+            <em>趣味は？</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- conD -->
   <section class="conD">
     <div class="container">
@@ -1051,15 +1079,86 @@
     </div>
     </footer>
 
+
+    <!-- lightbox(modal) -->
     <div class="lightbox_demo" id="modal1">
       DEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMO<br>
       DEMODEMODEMODEMODEMODEMODEMODEMO<br>
-      DEMODEMODEMODEMODEMODEMODEMODEMO<br>      
+      DEMODEMODEMODEMODEMODEMODEMODEMO<br>
     </div>
 
+
+  <!-- scriptファイル -->
+    <!-- fontawesome (icon) -->
+    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!-- Chart.js (スクリプト) -->
+    <script>
+    // ===================================
+    // Chart1
+    // ===================================
+    var data = [
+      {
+        value: 50,
+        color:"#fff"
+      },
+      {
+        value : 30,   
+            // Draw with background color
+        color : "#66ccff" 
+      },
+      {
+        value : 20,
+            // Draw with background color
+        color : "#fff" 
+      }
+    ];
+    var ctx = document.getElementById("myChart").getContext("2d");
+    new Chart(ctx).Doughnut(data,{
+      segmentShowStroke : false,
+      segmentStrokeColor : "#fff",
+      segmentStrokeWidth : 1,
+      percentageInnerCutout : 80, // **** Border width
+      animation : true,
+      animationSteps : 100,
+      animationEasing : "easeOutBounce",
+      animateRotate : true,
+      animateScale : false,
+      onAnimationComplete : null
+    });
+    
+    // ===================================
+    // Chart2
+    // ===================================
+    var dat   a = [
+      {
+        value: 62,
+        color:"#fff"
+      },
+      {
+        value : 100-62,
+        color : "#66ccff"
+      }
+    ];
+    var ctx = document.getElementById("myChart2").getContext("2d");
+    new Chart(ctx).Doughnut(data,{
+      segmentShowStroke : false,
+      segmentStrokeColor : "#fff",
+      segmentStrokeWidth : 1,
+      percentageInnerCutout : 80, // **** Border width
+      animation : true,
+      animationSteps : 100,
+      animationEasing : "easeOutBounce",
+      animateRotate : true,
+      animateScale : false,
+      onAnimationComplete : null
+    });
+    </script> 
+
   </body>
 </html>
