@@ -779,6 +779,13 @@ footer .container{
   padding: 40px 20px;
 }
 
+/* .footB 非表示 */
+@media screen and (max-width: 768px) {
+  .footB {
+    display: none;
+  }
+}
+
 /*footerA：サイト情報*/
 .footA h2{
   font-size: px;
@@ -893,5 +900,10 @@ footer .container{
 .footC{
   font-size: 12px;
   text-align: center;
+}
+
+/*mordal_window　制御*/
+.lightbox_demo{
+  display:none;
 }
 
