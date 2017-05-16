@@ -18,11 +18,11 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- light_box -->
-    <link rel="stylesheet" href="css/featherlight.css" media="all">
+    <link href="css/featherlight.css" rel="stylesheet" media="all">
     <!-- Chart.js -->
     <link href="css/chart.css" rel="stylesheet">
     <!-- Chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <link href="css/drawer.min.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -74,26 +74,21 @@
   </head>
 
 
-<!-- header -->
-  <body>
-    <header>
-      <div class="container">
-        <div class="container-small">
-          <button type="button" class="headC">
-          <span class="fa fa-bars" tittle="MENU"></span>
-          </button>
-        </div>
-        <nav class="headB">
-          <ul>
-            <li><a href="index.html">サービス</a></li>
-            <li><a href="#">メンバー</a></li>
-            <li><a href="#">インタービュー</a></li>
-            <li><a href="#">募集要項</a></li>
-            <li><a href="#">応募フォーム</a></li>
-            <li><a href="#">問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
+<!-- Header -->
+  <!-- MainMenu -->
+  <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
     </header>
 
 
@@ -102,7 +97,8 @@
       <div class="container">
         <div class="row">
           <div class="tittle">
-            <h1><span class="tittile">RECRUIT</span></h1>
+            <h1><span>LIVEEST,inc.</span></h1>
+            <h1><span>RECRUIT</span></h1>
           </div>
         </div>
       </div>
@@ -114,8 +110,8 @@
       <div class="container">
 
         <article>
-        <a href="#" data-featherlight="#modal1">
-        <div class="photo" style="background-image: url(img/service2.jpg);">
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/service.jpg);">
         </div>
         <div class="text">
         <h2>LIVEESTの仕事</h2>
@@ -124,8 +120,8 @@
         </article>
 
         <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/suzuki2.jpg);">
+        <a href="#" data-featherlight="#modal1">
+        <div class="photo1" style="background-image: url(img/suzuki.jpg);">
         </div>
         <div class="text2">
           <h2>Suzuki Masataka</h2>
@@ -138,7 +134,7 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/about2.jpg);">
+        <div class="photo2" style="background-image: url(img/about.jpg);">
         </div>
         <div class="text">
           <h2>採用について</h2>
@@ -148,23 +144,36 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/hashimoto3.jpg);">
+        <div class="photo2" style="background-image: url(img/hashimoto.jpg);">
         </div>
         <div class="text2">
           <h2>Hashimoto Arika</h2>
           <p>ITソリューション事業部</p>
           <p>セールスリーダー</p>
         </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/masumura.jpg);">
+        <div class="photo1" style="background-image: url(img/masumura.jpg);">
         </div>
         <div class="text">
-          <h2>Masumura Takuya</h2>
+          <h2>Ohkoda Satoshi</h2>
           <p>ITソリューション事業部</p>
+          <p>営業</p>
+        </div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/tarukawa.jpg);">
+        </div>
+        <div class="text2">
+          <h2>Tarukawa Shota</h2>
+          <p>テクニカルソリューション事業部</p>
           <p>エンジニア</p>
         </div>
         <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
@@ -173,7 +182,42 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/tarukawa2.jpg);">
+        <div class="photo1" style="background-image: url(img/masumura.jpg);">
+        </div>
+        <div class="text">
+          <h2>Masumura Takuya</h2>
+          <p>テクニカルソリューション事業部</p>
+          <p>エンジニア</p>
+        </div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/requirement3.jpg);">
+        </div>
+        <div class="text">
+          <h2>募集要項</h2>
+        </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/masumura.jpg);">
+        </div>
+        <div class="text">
+          <h2>Masumura Takuya</h2>
+          <p>ITソリューション事業部</p>
+          <p>エンジニア</p>
+        </div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/tarukawa2.jpg);">
         </div>
         <div class="text2">
           <h2>Tarukawa Shota</h2>
@@ -185,53 +229,7 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/requirement2.jpg);">
-        </div>
-        <div class="text">
-          <h2>募集要項</h2>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/requirement3.jpg);">
-        </div>
-        <div class="text">
-          <h2>募集要項</h2>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/masumura.jpg);">
-        </div>
-        <div class="text">
-          <h2>Masumura Takuya</h2>
-          <p>ITソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/tarukawa2.jpg);">
-        </div>
-        <div class="text2">
-          <h2>Tarukawa Shota</h2>
-          <p>ITソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/requirement3.jpg);">
+        <div class="photo1" style="background-image: url(img/requirement3.jpg);">
         </div>
         <div class="text">
           <h2>募集要項</h2>
@@ -241,7 +239,7 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/requirement.jpg);">
+        <div class="photo1" style="background-image: url(img/requirement.jpg);">
         </div>
         <div class="text">
           <h2>募集要項</h2>
@@ -251,7 +249,27 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/instagram.jpg);">
+        <div class="photo1" style="background-image: url(img/instagram.jpg);">
+        </div>
+        <div class="text">
+          <h2>応募フォーム</h2>
+        </div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/facebook.jpg);">
+        </div>
+        <div class="text">
+          <h2>Map</h2>
+        </div>
+        </a>
+        </article>
+
+        <article>
+        <a href="#">
+        <div class="photo1" style="background-image: url(img/instagram.jpg);">
         </div>
         <div class="text">
           <h2>Instagram</h2>
@@ -261,7 +279,7 @@
 
         <article>
         <a href="#">
-        <div class="photo" style="background-image: url(img/facebook.jpg);">
+        <div class="photo1" style="background-image: url(img/facebook.jpg);">
         </div>
         <div class="text">
           <h2>facebook</h2>
@@ -269,147 +287,68 @@
         </a>
         </article>
 
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/facebook.jpg);">
-        </div>
-        <div class="text">
-          <h2>facebook</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/facebook.jpg);">
-        </div>
-        <div class="text">
-          <h2>facebook</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo" style="background-image: url(img/instagram.jpg);">
-        </div>
-        <div class="text">
-          <h2>Instagram</h2>
-        </div>
-        </a>
-        </article>
 
       </div>
     </section>
 
 
-  <!-- ※削除するかも(背景が動くやつ) -->
-  <div class="cd-fixed-bg cd-bg-1 ">
-    <div class="test">
-    <section class="main_word">
-      <div class="container">
-        <div class="row" style="margin:0px 8%;color:#fff;">
-          <div class="col-md-6" style="margin-top:50px;margin-bottom:50px;">
-            <p class="en">
-              Job is ...<br>
-              <br>
-              It is a place to spend a lot of time in my life.<br>
-              That is why,<br>
-              Without fulfillment of work,<br>
-              there is no fulfillment of life.<br>
-              Elegance with boldness,<br />
-              Luxury with street-mind…<br />
-              <br />
-              ARISE of NEW AESTHETICS<br />
-              EVOKE of NEW CULTURE<br />
-              <br />
-              You should know it under the sun<br />
-              But you would NOT under the moon<br />
-              Too free to stay<br />
-              Too sophisticated to remain the same<br />
-              TOMORROW should never fail to transcend TODAY.<br />
-              <br />
-              WE ARE “TOKYO” from BEAUTIFUL CHAOS.<br />
-              35/139 TOKYO - eyewear that enhances your world.
-            </p>
+    <!-- main_2 -->
+    <div class="cd-fixed-bg cd-bg-1 ">
+      <div class="test">
+      <section class="main_word">
+        <div class="container">
+          <div class="row" style="margin:0px 8%;color:#fff;">
+            <div class="col-md-6" style="margin-top:50px;margin-bottom:50px;">
+              <p class="en">
+                Job is ...<br>
+                <br>
+                It is a place to spend a lot of time in my life.<br>
+                That is why,<br>
+                Without fulfillment of work,<br>
+                there is no fulfillment of life.<br>
+                Elegance with boldness,<br />
+                Luxury with street-mind…<br />
+                <br />
+                ARISE of NEW AESTHETICS<br />
+                EVOKE of NEW CULTURE<br />
+                <br />
+                You should know it under the sun<br />
+                But you would NOT under the moon<br />
+                Too free to stay<br />
+                Too sophisticated to remain the same<br />
+                TOMORROW should never fail to transcend TODAY.<br />
+                <br />
+                WE ARE “TOKYO” from BEAUTIFUL CHAOS.<br />
+                35/139 TOKYO - eyewear that enhances your world.
+              </p>
+            </div>
+            <div class="col-md-6 h2vr_0" style="margin-top:50px;margin-bottom:50px;">
+              <p class="ja">
+                【仕事】は、人生の中で多くの時間を費やす場である。<br />
+                だからこそ、＜仕事の充実なくして人生の充実なし＞と考える。<br />
+                どんな仕事でも、その時間は一度しかない人生の貴重な時間だ。<br />
+                <br />
+                <br />
+                そんな人生の貴重な時間を仕事に費やすからこそ、<br />
+                人生をより素晴らしいものにしたいからこそ、<br />
+                私達は本気で、何事にも全力で取り組む。<br />
+                <br />
+                今を楽しみ、人生をより素晴らしいものにする為に、<br />
+                皆様にとって<価値>のある会社にする為に、<br />
+                絶えずチャレンジを続け日々努力をしていく。<br />
+                <br />
+                新しい、挑戦を。新しい、知識を。<br />
+                それが、あなたとライブエストの成長を加速させる。
+              </p>
+            </div>
           </div>
-          <div class="col-md-6 h2vr_0" style="margin-top:50px;margin-bottom:50px;">
-            <p class="ja">
-              【仕事】は、人生の中で多くの時間を費やす場である。<br />
-              だからこそ、＜仕事の充実なくして人生の充実なし＞と考える。<br />
-              どんな仕事でも、その時間は一度しかない人生の貴重な時間だ。<br />
-              <br />
-              <br />
-              そんな人生の貴重な時間を仕事に費やすからこそ、<br />
-              人生をより素晴らしいものにしたいからこそ、<br />
-              私達は本気で、何事にも全力で取り組む。<br />
-              <br />
-              今を楽しみ、人生をより素晴らしいものにする為に、<br />
-              皆様にとって<価値>のある会社にする為に、<br />
-              絶えずチャレンジを続け日々努力をしていく。<br />
-              <br />
-              新しい、挑戦を。新しい、知識を。<br />
-              それが、あなたとライブエストの成長を加速させる。
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
-    </div>
-  </div>
-
-
-<!-- main_menu 
-  <section class="main_menu">
-    <div class="tittle">
-      <h1>Menu</h1>
-    </div> -->
-    <!-- main_menu 1列目 
-    <div class="row">
-      <div class="col-md-4">
-        <div class="link_content">
-        <h3>採用について</h3>
-        <span class="fa fa-rocket icon"></span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="link_content">
-        <h3>募集要項</h3>
-        <span class="fa fa-handshake-o icon"></span>
-      </div>
-      </div>
-      <div class="col-md-4">
-        <div class="link_content">
-        <h3>応募フォーム</h3>
-        <span class="fa fa-lightbulb-o icon"></span>
-        </div>
-      </div>
-    </div> -->
-    <!-- main_menu 2列目 
-    <div class="row">
-      <div class="col-md-4">
-      <div class="link_content">
-        <h3>社員紹介</h3>
-        <span class="fa fa-rocket icon"></span>
-      </div>
-      </div>
-      <div class="col-md-4">
-        <div class="link_content">
-        <h3>行動指針</h3>
-        <span class="fa fa-handshake-o icon"></span>
-      </div>
-      </div>
-      <div class="col-md-4">
-        <div class="link_content">
-        <h3>成長支援</h3>
-        <span class="fa fa-lightbulb-o icon"></span>
-        </div>
+      </section>
       </div>
     </div>
-  </section> -->
 
 
-      <!-- footer -->
+    <!-- footer -->
     <footer>
     <div class="container">
       <!-- footA -->
@@ -508,7 +447,7 @@
     </div>
 
     <div class="text">
-      <span class="fa fa-lightbulb-o icon"></span>
+      <span class="fa fa fa-handshake-o icon"></span>
       <h2>SES</h2>
       <p>様々なパートナー企業との提携により<br>
       最適な人材をご提案いたします。</p>
@@ -759,258 +698,48 @@
   <!-- 社員アンケート (Chart.js) -->
   <section class="questionnaire">
     <div class="container">
-      <div class="chart">
-        <canvas id="myChart" width="200" height="200"></canvas>
-        <div class="count">
-            <em>79</em>
-            <span class="caption">%</span>
-        </div>
-      </div>
-
-      <div class="chart" id="chart2">
-        <canvas id="myChart2" width="200" height="200"></canvas>
-        <div class="count">
-            <em>趣味は？</em>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- conD -->
-  <section class="conD">
-    <div class="container">
       <div class="tittle">
         <h1>社員アンケート</h1>
       </div>
       <div class="row">
-          <div class="col-lg-3 chart">
-          <h4>趣味は？</h4>
-          <canvas id="canvas1" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#F7464A",
-          highlight: "#FF5A5E",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#46BFBD",
-          highlight: "#5AD3D1",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#FDB45C",
-          highlight: "#FFC870",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(data);
-          </script>
-        </div>
+
         <div class="col-lg-3 chart">
-          <h4>休日の過ごし方は？</h4>
-          <canvas id="canvas2" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#01044E",
-          highlight: "01044E",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#FFF",
-          highlight: "#FFF",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#E3D7A3",
-          highlight: "#E3D7A3",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(data);
-          </script>
+          <div class="chart">
+            <canvas id="myChart" width="200" height="200"></canvas>
+            <div class="count">
+                <em>趣味は？</em>
+                <span class="caption">%</span>
+            </div>
           </div>
-
-          <div class="col-lg-3 chart">
-          <h4>休日の過ごし方は？</h4>
-          <canvas id="canvas3" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#D1FFFC",
-          highlight: "#D1FFFC",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#FFF",
-          highlight: "#FFF",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#E3D7A3",
-          highlight: "#E3D7A3",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(data);
-          </script>
         </div>
 
         <div class="col-lg-3 chart">
-        <h4>休日の過ごし方は？</h4>
-        <canvas id="canvas4" height="200" width="200"></canvas>
-        <script>
-        var data = [
-        {
-        value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
-        },
-        {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
-        },
-        {
-        value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
-          }
-          ];
-        var myChart = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(data);
-        </script>
-        </div>
-
-        </div>
-      </div>
-    </div>
-   <div class="container">
-      <div class="row">
-          <div class="col-lg-3 chart">
-          <h4>休日の過ごし方は？</h4>
-          <canvas id="canvas5" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#F7464A",
-          highlight: "#FF5A5E",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#46BFBD",
-          highlight: "#5AD3D1",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#FDB45C",
-          highlight: "#FFC870",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas5").getContext("2d")).Doughnut(data);
-          </script>
-        </div>
-        <div class="col-lg-3 chart">
-          <h4>休日の過ごし方は？</h4>
-          <canvas id="canvas6" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#F7464A",
-          highlight: "#FF5A5E",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#46BFBD",
-          highlight: "#5AD3D1",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#FDB45C",
-          highlight: "#FFC870",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas6").getContext("2d")).Doughnut(data);
-          </script>
+          <div class="chart" id="chart2">
+            <canvas id="myChart2" width="200" height="200"></canvas>
+            <div class="count">
+                <em>趣味は？</em>
+            </div>
           </div>
-
-          <div class="col-lg-3 chart">
-          <h4>休日の過ごし方は？</h4>
-          <canvas id="canvas7" height="200" width="200"></canvas>
-          <script>
-          var data = [
-          {
-          value: 300,
-          color:"#01044E",
-          highlight: "#FF5A5E",
-          label: "Red"
-          },
-          {
-          value: 50,
-          color: "#46BFBD",
-          highlight: "#5AD3D1",
-          label: "Green"
-          },
-          {
-          value: 100,
-          color: "#E3D7A3",
-          highlight: "#FFC870",
-          label: "Yellow"
-            }
-            ];
-          var myChart = new Chart(document.getElementById("canvas7").getContext("2d")).Doughnut(data);
-          </script>
         </div>
 
         <div class="col-lg-3 chart">
-        <h4>休日の過ごし方は？</h4>
-        <canvas id="canvas8" height="200" width="200"></canvas>
-        <script>
-        var data = [
-        {
-        value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
-        },
-        {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
-        },
-        {
-        value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
-          }
-          ];
-        var myChart = new Chart(document.getElementById("canvas8").getContext("2d")).Doughnut(data);
-        </script>
+          <div class="chart" id="chart2">
+            <canvas id="myChart2" width="200" height="200"></canvas>
+            <div class="count">
+                <em>趣味は？</em>
+            </div>
+          </div>
         </div>
+
+        <div class="col-lg-3 chart">
+          <div class="chart" id="chart2">
+            <canvas id="myChart2" width="200" height="200"></canvas>
+            <div class="count">
+                <em>趣味は？</em>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -1032,69 +761,217 @@
     </section>
 
 
-    <!-- footer -->
-    <footer>
-    <div class="container">
-      <div class="footA">
-        <h2>LIVE EST,INC.</h2>
-        <p>〒171-0014<br>
-           東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
-           TEL / FAX　03-6907-1122 / 03-6907-1123<br>
-           <a href="http://live-est.com">http://live-est.com</a>
-        </p>
-       </div> 
-      <nav class="footB">
-       <div>
-        <h3>ABOUT</h3>
-        <ul>
-          <li><a href="#">設立</a></li>
-          <li><a href="#">所在地</a></li>
-          <li><a href="#">地図</a></li>
-          <li><a href="#">スタッフ</a></li>
-        </ul>
-       </div>
-       <div>
-        <h3>SUPPORT</h3>
-        <ul>
-          <li><a href="#">設立</a></li>
-          <li><a href="#">所在地</a></li>
-          <li><a href="#">地図</a></li>
-          <li><a href="#">スタッフ</a></li>
-        </ul>
-       </div>
-       <div>
-        <h3>CONTENTS</h3>
-        <ul>
-          <li><a href="#">設立</a></li>
-          <li><a href="#">所在地</a></li>
-          <li><a href="#">地図</a></li>
-          <li><a href="#">スタッフ</a></li>
-        </ul>
-       </div>
-      </nav>
-
-      <div class="footC">
-      Copyright (C) 2017 LIVEEST All Rights Reserved.
+    <!-- 社員の1日 -->
+    <section class="schedule">
+      <h2>社員の1日</h2>
+      <div class="row" style="margin:0px">
+        <div class="col-lg-6">
+          <div class="photo" style="background-image: url(img/schedule_test.png);"></div>
+        </div>
+        <div class="col-lg-6">
+          <h3>住所のアイコン<br>
+          Tokyo Ikebukuro Toshimaku MIB bldg 5F </h3>
+        </div>
       </div>
-    </div>
-    </footer>
+    </section>
+    
+    <style>
+    .onedaySection{
+      width:705px;
+      margin-left:10%;
+      margin-right:10%;
+      display: block;
+    }
+    .scheduleTree {
+      margin: 0 0.5px 30px;
+      background: white url(img/bg_01.png) repeat-y 351px top;
+    }
+    .scheduleTree figure {
+        margin: 0 0 15px;
+        width: 320px;
+        text-align: center;
+          display: block;
+    }
+    .scheduleTree figure.left {
+      float: left;
+    }
 
+    .scheduleTree figure.right {
+      float: right;
+    }
+    .scheduleTree dl {
+        width: 356px;
+        margin: 0 0 15px;
+        padding: 0;
+        line-height: 1.5;
+        border: 1px solid #353535;
+        border-left-width: 1px;
+    }
+    .scheduleTree dl.left dt {
+        margin: -1px 0 0;
+        padding: 10px 52px 8px 15px;
+        background: url(img/bg_02.png) no-repeat 318px -1px;
+    }
+    .scheduleTree dl.left dd {
+        margin-bottom: -1px;
+        padding: 0 52px 13px 15px;
+        background: url(img/bg_03.png) repeat-y 318px 0;
+    }
+    .scheduleTree dl.right dt {
+        margin: -1px 0 0;
+        padding: 10px 15px 8px 52px;
+        background: url(img/bg_02.png) no-repeat -29px -1px;
+    }
+    .scheduleTree dl.right dd {
+        margin-bottom: -1px;
+        padding: 0 15px 13px 52px;
+        background: url(img/bg_03.png) repeat-y -29px 0;
+    }
+    .scheduleTree dl.last {
+        zoom: 1;
+        clear: both;
+        width: 292px;
+        margin: 0 auto;
+        padding: 10px 13px 12px;
+        background: #fff;
+    }
+
+    .scheduleTree dl dt time {
+      float: left;
+      margin-bottom: 1px;
+    }
+
+    .scheduleTree dl.left {
+        float: left;
+        border-right-width: 0;
+    }
+    .scheduleTree dl.right {
+        float: right;
+        border-left-width: 0;
+    }
+    .clear {
+        clear: both;
+    }
+    </style>
+    <section class="onedaySection">
+
+      <header>
+        <h2><span class="job">営業・マーケティング</span> <span class="name">M.Y.さん</span><span class="join">（2010年4月入社）</span></h2>
+      </header>
+      <div class="scheduleTree">
+
+        <figure class="left"><img src="img/img_business4_01.jpg" alt=""></figure>
+
+        <dl class="right">
+        <dt><time>9:30</time>スケジュール・タスク管理</dt>
+        <dd>
+        メールチェックや各タスクの進捗確認をし、今日のスケジュールを決めます。</dd>
+        </dl>
+
+        <dl class="right">
+        <dt><time>10:00</time>社内の打ち合わせ</dt>
+        <dd>部署内だけでなく他部署とも打ち合わせがあります。1つの営業施策を実施するのにも営業視点、お客様視点、運用視点と様々な視点が必要です。<br>
+        打ち合わせは学ぶポイントが多くあります。 吸収して実行に移しています。</dd>
+        </dl>
+
+        <dl class="left clear">
+        <dt><time>12:00</time>課のメンバーとランチ</dt>
+        <dd>会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。</dd>
+        </dl>
+
+        <dl class="left">
+        <dt><time>13:00</time>取引先へ出発</dt>
+        <dd>入社当初は先輩の同行でしたが、2年目からはほぼ1人で商談をしています。<br>
+        どの様に話を進めるかイメージしながら取引先へ向かいます。</dd>
+        </dl>
+
+        <figure class="right"><img src="img/img_business4_02.jpg" alt=""></figure>
+
+        <dl class="left">
+        <dt><time>14:00</time>取引先との打ち合わせ</dt>
+        <dd>提携施策について現状の共有と今後の提案を行います。昔も今も良い緊張感をもち商談が出来ています。
+        </dd>
+        </dl>
+
+        <figure class="left clear"><img src="img/img_business4_03.jpg" alt=""></figure>
+
+        <dl class="right">
+        <dt><time>16:00</time>メール・電話対応</dt>
+        <dd>外出から戻ると、取引先や社内から連絡が入っているので対応します。</dd>
+        </dl>
+
+        <dl class="left clear">
+        <dt><time>17:00</time>施策考案・資料作成</dt>
+        <dd>次の商談や打ち合わせにむけて、施策を考え資料を作ります。<br>
+        煮詰まった時は課のメンバーに相談しながら進めます。
+        </dd>
+        </dl>
+
+        <figure class="right"><img src="img/img_business4_04.jpg" alt=""></figure>
+
+        <dl class="last">
+        <dt><time>20:00</time>帰宅</dt>
+        <dd>
+        <figure><img src="img/img_business4_last.jpg" alt=""></figure>
+        明日以降のタスクとスケジュールを軽く整理して帰路へ。早く帰宅できる日は趣味に時間を使います。</dd>
+        </dl>
+
+      </div><!-- / .scheduleTree -->
+    </section>
 
     <!-- lightbox(modal) -->
     <div class="lightbox_demo" id="modal1">
-      DEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMODEMO<br>
-      DEMODEMODEMODEMODEMODEMODEMODEMO<br>
-      DEMODEMODEMODEMODEMODEMODEMODEMO<br>
+      <!-- masumura_質問① -->
+      <p>-入社を決めた理由は？-<br>
+      自分も大きく成長し、会社の成長に貢献したいと思ったことが一番の理由です。<br>
+      入社前にライブエストの｢人生を最高に楽しむ｣というテーマを見て面白い会社だなという印象とともに、<br>
+      ｢仕事に対する姿勢｣を真剣に考えている会社の社風に感銘を受けました。<br>
+      また石川社長の社員に対する愛情や社員全員を100％信頼してくれる姿が好きになりました。<br>
+      この雰囲気があるから｢自分自身、もっと成長しよう！｣と思える心が産まれます。</p><br>
+      <!-- masumura_質問② -->
+      <p>-現在の仕事内容は？-<br>
+      インフラ系のサーバ構築・更改案件として、お客様の会社で作業をしています。<br>
+      サーバー周りのソフトウェア・ミドルウェアの維持、管理などを行っています。</p><br>
+      <!-- masumura_質問③ -->
+      <p>-これから目標は？-<br>
+      将来的には企業組織の安全なネットワーク環境を守れるような仕事をしたいです。<br>
+      具体的には、ネットワークやセキュリティに興味があり、<br>
+      今は業務に加え、様々な勉強や資格取得に向けて動いています。<br>
+      まだまだ発展途上ですが、｢頼れるエンジニア｣になりたいです。</p><br>
+      <!-- masumura_質問④ -->
+      <p>あなたの座右の銘は？<br>
+      『なんでも真剣に』ということをいつも心がけています。<br>
+      仕事は真剣にやって当たり前ですが、忘れがちな｢プライベート｣も"真剣"に楽しむ姿勢を常に持ち、<br>
+      プライベートを真剣に楽しんだ分、今度は仕事を真剣にやる。<br>
+      この相乗効果で、｢人生の充実と自身の成長｣を忘れないようにしています。</p><br>
+      <!-- masumura_質問⑤ -->
+      <p>なぜIT業界に？<br>
+      僕は異業種からの転職で、以前からコンピュータの発展が身近になる機会が増え、<br>
+      将来的にも可能性のある業界だと感じてIT業界に転職しました。<br>
+      初めはわからない用語がたくさんあり苦労したことも多かったですが、<br>
+      今となっては良い経験になったと感じています。<br>
+      常に勉強する姿勢、興味をもつ姿勢を忘れない意識付けができたのも、この業界に入ってからです。<br>
     </div>
 
-
   <!-- scriptファイル -->
-    <!-- fontawesome (icon) -->
-    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- fontawesome (icon) -->
+    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
+    <!-- iscroll.js -->
+    <script src="js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <!-- drawer.js (スクリプト)  -->
+    <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+    </script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> 
     <!-- Chart.js (スクリプト) -->
     <script>
     // ===================================
