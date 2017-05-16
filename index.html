@@ -774,14 +774,29 @@
         </div>
       </div>
     </section>
-    
+
     <style>
     .onedaySection{
       width:705px;
-      margin-left:10%;
-      margin-right:10%;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
       display: block;
     }
+    .onedaySection header {
+        margin: 0 0 30px;
+        padding: 10px 20px;
+        background: #f1f1f1 url(img/bg_section.png) no-repeat;
+    }
+    .onedaySection header h2 {
+        margin: 0;
+        padding: 0 100px 0 0;
+        color: #333333;
+        font-size: 116%;
+        background: url(img/ttl.png) no-repeat right center;
+        text-shadow: 0 1px 0 #fff;
+    }
+
     .scheduleTree {
       margin: 0 0.5px 30px;
       background: white url(img/bg_01.png) repeat-y 351px top;
@@ -807,6 +822,9 @@
         border: 1px solid #353535;
         border-left-width: 1px;
     }
+    .scheduleTree dl dt{
+        font-size: 124%;
+    }
     .scheduleTree dl.left dt {
         margin: -1px 0 0;
         padding: 10px 52px 8px 15px;
@@ -830,9 +848,9 @@
     .scheduleTree dl.last {
         zoom: 1;
         clear: both;
-        width: 292px;
+        width: 356px;
         margin: 0 auto;
-        padding: 10px 13px 12px;
+        padding: 20px 33px 12px;
         background: #fff;
     }
 
@@ -849,10 +867,20 @@
         float: right;
         border-left-width: 0;
     }
+    .scheduleTree dl dd figure {
+        width: auto;
+        margin: 0 auto 7px;
+        padding: 0;
+    }
     .clear {
         clear: both;
     }
+    .scheduleTree time {
+        margin-right: 10px;
+        color: #2799c5;
+    }
     </style>
+    <div style="width:100%;">
     <section class="onedaySection">
 
       <header>
@@ -913,7 +941,8 @@
         <dt><time>20:00</time>帰宅</dt>
         <dd>
         <figure><img src="img/img_business4_last.jpg" alt=""></figure>
-        明日以降のタスクとスケジュールを軽く整理して帰路へ。早く帰宅できる日は趣味に時間を使います。</dd>
+        明日以降のタスクとスケジュールを軽く整理して帰路へ。早く帰宅できる日は趣味に時間を使います。
+        </dd>
         </dl>
 
       </div><!-- / .scheduleTree -->
