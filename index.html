@@ -946,7 +946,7 @@
           max-width: 980px;
           margin: 0 auto;
       }
-      .p-requirement__basicInfo__wrapper {
+      .form_space {
           margin-bottom: 40px;
           padding-bottom: 50px;
           border-bottom: 1px solid #000;
@@ -962,8 +962,14 @@
           -ms-flex-align: center;
           align-items: center;
       }
-
-      .p-requirement__basicInfo__box {
+      .form_description{
+          margin:30px 0;
+      }
+      .input_space {
+          width: 100%;
+          padding: 25px 10px;
+          margin-bottom: 5px;
+          background-color: #fafafa;
           padding: 20px;
           display: -webkit-box;
           display: -webkit-flex;
@@ -976,26 +982,20 @@
           -ms-flex-align: center;
           align-items: center;
       }
-      .p-requirement__basicInfo__box {
-          width: 100%;
-          padding: 25px 10px;
-          margin-bottom: 5px;
-          background-color: #fafafa;
-      }
-      .p-requirement__basicInfo__subtitle {
+      .input_title {
           width: 25%;
           text-align: left;
       }
-      .p-requirement__basicInfo__subtitle {
+      .input_title {
           font-size: 15px;
           font-weight: 700;
           margin-bottom: 14px;
       }
-      .c-input__required {
-          color: #ad1014;
+      .required {
+          color: red;
           margin: 0 5px;
       }
-      .p-requirement__basicInfo__detail {
+      .input_box {
           width: 75%;
       }
       .c-input {
@@ -1012,10 +1012,10 @@
           -webkit-appearance: none;
           appearance: none;
       }
-      .c-input__selectBox {
+      .c-input_selectBox {
           position: relative;
       }
-      .c-input__selectMark {
+      .c-input_selectMark {
           position: absolute;
           top: 10px;
           right: 14px;
@@ -1023,7 +1023,7 @@
           color: #ccc;
           pointer-events: none;
       }
-      .c-input__selectMark--coverColor {
+      .c-input_selectMark--coverColor {
           color: black;
       }
       .p-term {
@@ -1043,15 +1043,15 @@
 
     <!-- form_contents -->
     <div class="form_contents">
-    <form id="form" class="form_part" name="registration_form" action="mail_test.php" method="post">
-      <div class="p-requirement__basicInfo__wrapper p-requirement__basicInfo__wrapper--noPadding">
-        <div class="p-requirement__basicInfo__desc">応募は下記のフォームよりお願い致します。フォーム中の「<span class="c-input__required">※</span>」印は入力必須項目です。
+    <form id="form" class="form_part" name="reg_form" action="mail_test.php" method="post">
+      <div class="form_space">
+        <div class="form_description">応募は下記のフォームよりお願い致します。フォーム中の「<span class="required">※</span>」印は入力必須項目です。
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">職種<span class="c-input__required">※</span></div>
-          <div class="p-requirement__basicInfo__detail">
-            <div class="c-input__selectBox">
-              <i class="fa fa-caret-down c-input__selectMark c-input__selectMark--coverColor" aria-hidden="true"></i>
+        <div class="input_space">
+          <div class="input_title">職種<span class="required">※</span></div>
+          <div class="input_box">
+            <div class="c-input_selectBox">
+              <i class="fa fa-caret-down c-input_selectMark c-input_selectMark--coverColor" aria-hidden="true"></i>
               <select id="select_1" name="occupation" class="c-input c-input--select" data-validetta="required">
                 <option value="">選んでください</option>
                 <!-- <option value="1">営業</option>
@@ -1062,45 +1062,45 @@
             </div>
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">氏名<span class="c-input__required">※</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">氏名<span class="required">※</span></div>
+          <div class="input_box">
             <input name="kanjiName" size="30" class="p-contact__input c-input" data-validetta="required" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">フリガナ<span class="c-input__required">※</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">フリガナ<span class="required">※</span></div>
+          <div class="input_box">
             <input name="kanaName" size="30" class="p-contact__input c-input" data-validetta="required" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">年齢<span class="c-input__required">※</span><span class="c-input__desc">半角数字</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">年齢<span class="required">※</span><span class="c-input__desc">半角数字</span></div>
+          <div class="input_box">
             <input name="age" size="30" class="p-contact__input c-input" data-validetta="required,number" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">メールアドレス<span class="c-input__required">※</span><span class="c-input__desc">半角英数</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">メールアドレス<span class="required">※</span><span class="c-input__desc">半角英数</span></div>
+          <div class="input_box">
             <input name="emailAddress" size="30" class="p-contact__input c-input" data-validetta="required,email" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">メールアドレス確認<span class="c-input__required">※</span><span class="c-input__desc">半角英数</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">メールアドレス確認<span class="required">※</span><span class="c-input__desc">半角英数</span></div>
+          <div class="input_box">
             <input name="confirmEmailAddress" size="30" class="p-contact__input c-input" data-validetta="required,email,equalTo[emailAddress]" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">電話番号<span class="c-input__required">※</span><span class="c-input__desc">半角</span></div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">電話番号<span class="required">※</span><span class="c-input__desc">半角</span></div>
+          <div class="input_box">
             <input name="phoneNumber" class="p-contact__input c-input" data-validetta="required,tel" placeholder="例）03-5459-0488" type="text">
           </div>
         </div>
-        <div class="p-requirement__basicInfo__box">
-          <div class="p-requirement__basicInfo__subtitle">住所</div>
-          <div class="p-requirement__basicInfo__detail">
+        <div class="input_space">
+          <div class="input_title">住所</div>
+          <div class="input_box">
             <div class="p-requirement__groupInput c-input__wrapper">
               <label class="c-input__label">郵便番号 <span class="c-input__desc">半角数字</span></label>
               <div class="c-input__group">
@@ -1131,46 +1131,29 @@
       <div class="p-requirement__term p-term">
         <h3 class="p-term__title">採用応募者の個人情報の取扱いについて</h3>
         <br>
-        a)  個人情報の取扱事業者の名称<br>
-        株式会社アイデンティティー<br>
-        <br>
-        b)  個人情報の保護管理者<br>
-        個人情報保護管理責任者　　星野　友紀子<br>
-        <br>
-        c)  個人情報の利用目的<br>
-        入力された個人情報は、お問合せへの対応のために利用します。<br>
-        <br>
-        d)  個人情報の第三者提供<br>
-        法令の要請に基づく場合を除き、取得した個人情報をご本人の同意なく、第三者に提供する
-        ことはありません。<br>
-        <br>
-        e)  個人情報の取扱いの委託<br>
-        取得した個人情報の全部又は一部について外部に取扱いの委託を行なうことはありません。<br>
-        <br>
-        f)  開示対象個人情報の開示等の求めに応じる問合わせ窓口<br>
-        ご本人からの求めにより、当社が取得した開示対象個人情報の利用目的の通知、開示、
-        内容の訂正、追加又は削除、利用の停止、消去及び第三者への提供の停止（「開示等」という）
-        に応じます。<br>
-        開示等の求めに応じる窓口は、以下の「お問合せ先」をご覧ください。<br>
-        <br>
-        g)  個人情報の入力項目について<br>
-        個人情報の各入力項目への入力は、任意となっておりますが、主要な項目（※印項目）
-        に入力がない場合は、お問合わせの内容によっては、対応できない場合があります。<br>
-        <br>
-        h)  本人が容易に認識できない方法による個人情報の取得<br>
-        クッキーやウェブビーコン等を用いるなどして、本人が容易に認識できない方法による
-        個人情報の取得は、行なっておりません。<br>
-        <br>
-        x)  個人情報の安全管理措置<br>
-        このサイトは、SSL（Secure Socket Layer)暗号化措置により、個人情報への不正アクセス、
-        その盗用などから保護しております。<br>
-        取得した個人情報は、漏洩、滅失又は毀損の防止と是正、その他個人情報の安全管理
-        のために、必要かつ適切な措置を講じています。<br>
-        取得した個人情報は、お問合せに対して回答後、当社において確実に削除します。<br>
-        <br>
-        お問合せ先<br>
-        個人情報問い合せ窓口：03-5459-0488<br>
-        E-MAIL:web-sales@id-entity.jp<br>
+            株式会社ライブエスト（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。<br/>
+            <br/>
+            <strong>・個人情報の管理</strong><br/>
+            当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。<br/>
+            <br/>
+            <strong>・個人情報の利用目的</strong><br/>
+            お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用致します。<br/>
+            <br/>
+            <strong>・個人情報の第三者への開示・提供の禁止</strong><br/>
+            当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示致しません。<br/>
+            [A] お客さまの同意がある場合<br/>
+            [B] お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br/>
+            [C] 法令に基づき開示することが必要である場合<br/>
+            <br/>
+            <strong>・個人情報の安全対策</strong><br/>
+            当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。<br/>
+            <br/>
+            <strong>・ご本人の照会</strong><br/>
+            お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させて頂きます。<br/>
+            <br/>
+            <strong>・法令、規範の遵守と見直し</strong><br/>
+            当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、<br/>
+            本ポリシーの内容を適宜見直し、その改善に努めます。<br/>
       </div>
       <div class="p-requirement__agree">
         <div class="p-agree c-input__checkbox">
