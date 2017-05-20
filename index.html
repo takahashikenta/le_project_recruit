@@ -73,7 +73,7 @@
         .content_title::after{
           content: "";
           display: block;
-          width: 120px;
+          width: 80px;
           height: 1px;
           background: #01044E;
           margin: 20px auto;
@@ -108,18 +108,11 @@
       </nav>
     </header>
 
+<!-- divの場合 -->
+<div id="block" data-vide-bg="movie/sample" data-vide-options="position: 0% 50%">
+    <div id="content">LIVEEST</div>
+</div>
 
-<!-- main_tittle -->
-    <section class="main_tittle">
-      <div class="container">
-        <div class="row">
-          <div class="tittle">
-            <h1><span>LIVEEST,inc.</span></h1>
-            <h1><span>RECRUIT</span></h1>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 <!-- main_1 -->
@@ -656,6 +649,19 @@
     </div>
   </section>
 
+
+  <!-- 社員Interview -->
+  <div class="cd-fixed-bg2 cd-bg-2 ">
+    <div class="test">
+    <section class="main_word">
+      <div class="container">
+
+      </div>
+    </section>
+    </div>
+  </div>
+
+
 <!-- conC -->
   <section class="conC">
     <div class="container">
@@ -880,7 +886,6 @@
 
 
     <!-- 社員の一日 (Tabs) 作成中 -->
-    <h1 class="content_title">社員の一日</h1>
     <section class="tabs">
       <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
         <label for="tab-1" class="tab-label-1">Hashimoto Arika</label>
@@ -897,8 +902,8 @@
 
     <!-- ./onedaySection style -->
     <!-- onedaySection -->
-    <div class="content-1" style="width:100%;">    
-    <section class="onedaySection" style="padding-top:30px;">
+    <div class="content-1" style="width:100%;"> 
+    <section class="onedaySection">
 
       <header>
         <h2><span class="job">セールスリーダー:</span> <span class="name">Hashimoto Arika</span></h2>
@@ -1263,6 +1268,17 @@
     <script src="js/drawer.min.js"></script>
     <!-- tabs (社員のスケジュールで使用しているjQuery) -->
     <script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+    <!-- vide.js (top動画) -->
+    <script src="js/jquery.vide.min.js"></script>
+    <script>
+      $("#block").vide({
+          volume: 1,
+          playbackRate: 1,
+          muted: true,
+          loop: true,
+          autoplay: true
+      });
+    </script>
     <!-- drawer.js (スクリプト)  -->
     <script>
     $(document).ready(function() {
