@@ -63,6 +63,23 @@
           padding-right:0px;
           padding-left:0px;
         }
+        .content_title{
+            font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+            text-align:center;
+            font-weight: bold;
+            font-size: 2rem;
+            color:#01044E;
+        }
+        .content_title::after{
+          content: "";
+          display: block;
+          width: 80px;
+          height: 1px;
+          background: #01044E;
+          margin: 20px auto;
+        }
+
+
     </style>
     <script>
       $(function(){
@@ -361,6 +378,8 @@
         </p>
        </div>
       <!-- footB -->
+      <!-- 2017/05/20 不要（非表示）-->
+      <!--      
       <nav class="footB">
        <div>
         <h3>ABOUT</h3>
@@ -417,6 +436,7 @@
         </ul>
        </div>
       </nav>
+      -->
       <!-- footC -->
       <div class="footC">
       Copyright (C) 2016 LIVEEST All Rights Reserved.
@@ -428,63 +448,60 @@
 <!-- company (LIVEESTの仕事) -->
   <!-- 1列目 -->
   <section class="company">
-  <div class="tittle">
-    <h1>LIVEESTの仕事</h1>
-  </div>
-  <div class="container">
-    <div class="text">
-      <span class="fa fa fa-cog icon"></span>
-      <h2>システム開発</h2>
-      <p>お客様のニーズに対して、目的をしっかり理解して<br>
-      最適なシステムを設計・構築を行います。</p>
+    <h1 class="content_title">LIVEESTの仕事</h1>
+    <div class="container">
+      <div class="text">
+        <span class="fa fa fa-cog icon"></span>
+        <h2>システム開発</h2>
+        <p>お客様のニーズに対して、目的をしっかり理解して<br>
+        最適なシステムを設計・構築を行います。</p>
+      </div>
+
+      <div class="text">
+        <span class="fa fa-hdd-o icon"></span>
+        <h2>インフラ</h2>
+        <p>インフラ(サーバ・ネットワーク・データベース)の<br>
+        設計から構築、運用保守まで一貫して行います。</p>
+      </div>
+
+      <div class="text">
+        <span class="fa fa fa-handshake-o icon"></span>
+        <h2>SES</h2>
+        <p>様々なパートナー企業との提携により<br>
+        最適な人材をご提案いたします。</p>
+      </div>
     </div>
 
-    <div class="text">
-      <span class="fa fa-hdd-o icon"></span>
-      <h2>インフラ</h2>
-      <p>インフラ(サーバ・ネットワーク・データベース)の<br>
-      設計から構築、運用保守まで一貫して行います。</p>
-    </div>
+    <!-- 2列目 -->
+    <div class="container">
+      <div class="text">
+        <span class="fa fa-desktop icon"></span>
+        <h2>WEBサイト・HP作成</h2>
+        <p>お客様のご希望通り、WEBサイト・HPを作成いたします。<br>
+        また、ご提案から運用、保守まで一貫して行います。</p>
+      </div>
 
-    <div class="text">
-      <span class="fa fa fa-handshake-o icon"></span>
-      <h2>SES</h2>
-      <p>様々なパートナー企業との提携により<br>
-      最適な人材をご提案いたします。</p>
-    </div>
-  </div>
+      <div class="text">
+        <span class="fa fa-search icon"></span>
+        <h2>SEO</h2>
+        <p>独自のSEOの技術とノウハウで、<br>
+        SEOを考慮したサイト運用を総合的に支援します。</p>
+      </div>
 
-  <!-- 2列目 -->
-  <div class="container">
-    <div class="text">
-      <span class="fa fa-desktop icon"></span>
-      <h2>WEBサイト・HP作成</h2>
-      <p>お客様のご希望通り、WEBサイト・HPを作成いたします。<br>
-      また、ご提案から運用、保守まで一貫して行います。</p>
+      <div class="text">
+        <span class="fa fa-rocket icon"></span>
+        <h2>新規事業</h2>
+        <p>ITという分野にとらわれることなく、<br>
+        様々な事業に挑戦します。</p>
+      </div>
     </div>
-
-    <div class="text">
-      <span class="fa fa-search icon"></span>
-      <h2>SEO</h2>
-      <p>独自のSEOの技術とノウハウで、<br>
-      SEOを考慮したサイト運用を総合的に支援します。</p>
-    </div>
-
-    <div class="text">
-      <span class="fa fa-rocket icon"></span>
-      <h2>新規事業</h2>
-      <p>ITという分野にとらわれることなく、<br>
-      様々な事業に挑戦します。</p>
-    </div>
-
-  </div>
   </section>
 
 
 <!-- about_recruit (採用について) -->
   <article class="about_recruit">
+    <h1 class="content_title">採用について</h1>
     <div class="container">
-      <h1>採用について</h1>
       <p>ライブエストの強みは、なんといっても「人」！　当社の考え方にコミットしたメンバーたちの活躍により
       「ライブエストさんの社員なら、是非とも受け入れたい」というお客様が大勢います。<br><br>
 
@@ -511,9 +528,7 @@
 
 <!-- requirement (募集要項) -->
   <section class="requirement">
-    <div class="tittle">
-      <h1>募集要項</h1>
-    </div>
+      <h1 class="content_title">募集要項</h1>
     <div class="container">
       <table class="table table-bordered">
        <tbody>
@@ -603,9 +618,7 @@
 
 <!-- support (成長支援) -->
   <section class="support">
-    <div class="tittle">
-      <h1>成長支援</h1>
-    </div>
+    <h1 class="content_title">成長支援</h1>
     <div class="container">
       <table class="table table-bordered">
        <tbody>
@@ -747,7 +760,17 @@
 
     <!-- location -->
     <section class="location">
-    <h2>LOCATION</h2>
+    <h1 class="content_title">アクセス</h1>
+    <div class="container text-center">
+      <div>
+        <h2>LIVE EST,INC.</h2>
+        <p>〒171-0014<br>
+           東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
+           TEL / FAX　03-6907-1122 / 03-6907-1123<br>
+           <a href="http://live-est.com">http://live-est.com</a>
+        </p>
+      </div>
+    </div>
     <div class="row" style="margin:0px">
     <div class="col-lg-6">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6123412217426!2d139.7072388146615!3d35.735751334588535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f996b8e35%3A0xa7e75361fd07f47d!2z44CSMTcwLTAwMTQg5p2x5Lqs6YO96LGK5bO25Yy65rGg6KKL77yS5LiB55uu77yW77yY4oiS77yZ!5e0!3m2!1sja!2sjp!4v1481430478674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -1076,6 +1099,7 @@
     <!-- form_contents -->
     <div class="form_contents">
     <form id="form" class="form_part" name="reg_form" action="mail_test.php" method="post">
+      <h1 class="content_title">応募フォーム</h1>
       <div class="form_space">
         <div class="form_description">応募は下記のフォームよりお願い致します。フォーム中の「<span class="required">※</span>」印は入力必須項目です。
         </div>
