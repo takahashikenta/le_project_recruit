@@ -648,6 +648,7 @@
       </table>
     </div>
   </section>
+<<<<<<< Updated upstream
 
 
   <!-- 社員Interview -->
@@ -750,31 +751,47 @@
     </div>
   </section>
 
-
-    <!-- location -->
-    <section class="location">
+  
+  <script>
+  $(function() {
+      var map = $('iframe');
+      //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
+      map.css('pointer-events', 'none');
+      //一度クリックされたらマウスイベントを有効にする
+      $('.map_wrapper').click(function() {
+          map.css('pointer-events', 'auto');
+      });
+      //iframeからマウスが離れたら再度pointer-events:noneを効かせる
+      map.mouseout(function() {
+          map.css('pointer-events', 'none');
+      });
+  });
+  </script>
+  <!-- location -->
+  <section class="location">
     <h1 class="content_title">アクセス</h1>
     <div class="container text-center">
       <div>
-        <h2>LIVE EST,INC.</h2>
-        <p>〒171-0014<br>
-           東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
-           TEL / FAX　03-6907-1122 / 03-6907-1123<br>
-           <a href="http://live-est.com">http://live-est.com</a>
+        <h2 style="color:#01044E;">LIVE EST,INC.</h2>
+        <p style="color:#01044E;">
+          〒171-0014 東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
+          TEL / FAX　03-6907-1122 / 03-6907-1123<br>
+          <a href="http://live-est.com">http://live-est.com</a>
         </p>
       </div>
     </div>
-    <div class="row" style="margin:0px">
-    <div class="col-lg-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6123412217426!2d139.7072388146615!3d35.735751334588535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f996b8e35%3A0xa7e75361fd07f47d!2z44CSMTcwLTAwMTQg5p2x5Lqs6YO96LGK5bO25Yy65rGg6KKL77yS5LiB55uu77yW77yY4oiS77yZ!5e0!3m2!1sja!2sjp!4v1481430478674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h1 class="content_title">行き方</h1>
+    <div class="container text-center">
+        <p style="color:#01044E;">
+          JR線　池袋駅　徒歩15分<br>
+          西武池袋線　池袋駅　徒歩15分<br>
+          東京メトロ　副都心線池袋駅　徒歩10分
+        </p>
     </div>
-    <div class="col-lg-6">
-    <h3>住所のアイコン<br>
-        Tokyo Ikebukuro Toshimaku MIB bldg 5F </h3>
-
+    <div class="map_wrapper" style="width:100%";>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6123412217426!2d139.7072388146615!3d35.735751334588535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f996b8e35%3A0xa7e75361fd07f47d!2z44CSMTcwLTAwMTQg5p2x5Lqs6YO96LGK5bO25Yy65rGg6KKL77yS5LiB55uu77yW77yY4oiS77yZ!5e0!3m2!1sja!2sjp!4v1481430478674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    </div>
-    </section>
+  </section>
 
 
     <!-- onedaySection style -->
