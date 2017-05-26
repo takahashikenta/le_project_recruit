@@ -108,10 +108,68 @@
       </nav>
     </header>
 
-<!-- divの場合 -->
+<!-- main_movie -->
 <div id="block" data-vide-bg="movie/sample" data-vide-options="position: 0% 50%">
     <div id="content">LIVEEST</div>
 </div>
+
+<!-- main_test 
+
+  <style>
+#wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;   /*全体の中央寄せ*/
+}
+#container {
+  width: 100%;
+  margin: 0 auto;   /*中央寄せ*/
+  position: relative;
+}
+.item {
+  margin: px;
+  width: 600px;
+  height: 500px;
+  padding: px;
+  border: 4px solid #fff;
+}
+.item.x2 {
+  width: 300px;
+}
+.item.x3 {
+  width: 300px;
+}
+.item img {
+  width: 100%;
+}
+  </style>
+
+<div id="wrapper">
+  <div id="container">
+    <div class="item"><img src="img/service.jpg"  alt="">
+      <p>title 1</p>
+    </div>
+    <div class="item x2"><img src="img/service.jpg"  alt="">
+      <p>title 2</p>
+    </div>
+    <div class="item x3"><img src="img/service.jpg"  alt="">
+      <p>title 3</p>
+    </div>
+    ...
+  </div>
+</div>
+
+ masonry.js (main_test)
+<script src="js/masonry.pkgd.min.js"></script>
+<script>
+jQuery(function($){  
+  $('#container').masonry({
+    itemSelector: '.item',
+    columnWidth: 5, 
+    isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整
+  });  
+});
+</script>-->
 
 
 
@@ -138,7 +196,7 @@
           <p>テクニカルソリューション事業部</p>
           <p>事業部長</p>
         </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.8;background-color:#01044E;"></div>
         </a>
         </article>
 
@@ -209,13 +267,12 @@
         <div class="text">
           <h2>募集要項</h2>
         </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
         <article>
         <a href="#">
-        <div class="photo1" style="background-image: url(img/masumura.jpg);">
+        <div class="photo1" style="background-image: url(img/tarukawa.jpg);">
         </div>
         <div class="text">
           <h2>Masumura Takuya</h2>
@@ -227,13 +284,14 @@
 
         <article>
         <a href="#">
-        <div class="photo1" style="background-image: url(img/tarukawa2.jpg);">
+        <div class="photo1" style="background-image: url(img/suzuki.jpg);">
         </div>
         <div class="text2">
           <h2>Tarukawa Shota</h2>
           <p>ITソリューション事業部</p>
           <p>エンジニア</p>
         </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
@@ -252,8 +310,9 @@
         <div class="photo1" style="background-image: url(img/requirement.jpg);">
         </div>
         <div class="text">
-          <h2>募集要項</h2>
+          <h2>成長支援</h2>
         </div>
+        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
         </a>
         </article>
 
@@ -1296,6 +1355,8 @@
           autoplay: true
       });
     </script>
+
+
     <!-- drawer.js (スクリプト)  -->
     <script>
     $(document).ready(function() {
