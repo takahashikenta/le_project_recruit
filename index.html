@@ -20,7 +20,9 @@
     <!-- light_box -->
     <link href="css/featherlight.css" rel="stylesheet" media="all">
     <!-- Chart.js -->
+    <!--
     <link href="css/chart.css" rel="stylesheet">
+    -->
     <!-- Chart.js -->
     <link href="css/drawer.min.css" rel="stylesheet">
 
@@ -707,7 +709,6 @@ jQuery(function($){
       </table>
     </div>
   </section>
-<<<<<<< Updated upstream
 
 
   <!-- 社員Interview -->
@@ -723,6 +724,8 @@ jQuery(function($){
 
 
 <!-- conC -->
+<!-- 2017/05/20 不要 -->
+<!--
   <section class="conC">
     <div class="container">
       <div class="tittle">
@@ -759,17 +762,14 @@ jQuery(function($){
       </div>
     </div>
   </section>
-
+-->
 
   <!-- 社員アンケート (Chart.js) -->
   <section class="questionnaire">
+    <h1 class="content_title">社員アンケート</h1>
     <div class="container">
-      <div class="tittle">
-        <h1>社員アンケート</h1>
-      </div>
       <div class="row">
 
-        <div class="col-lg-3 chart">
           <div class="chart">
             <canvas id="myChart" width="200" height="200"></canvas>
             <div class="count">
@@ -777,34 +777,28 @@ jQuery(function($){
                 <span class="caption">%</span>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 chart">
+          <!--
           <div class="chart" id="chart2">
             <canvas id="myChart2" width="200" height="200"></canvas>
             <div class="count">
                 <em>趣味は？</em>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-3 chart">
           <div class="chart" id="chart2">
             <canvas id="myChart2" width="200" height="200"></canvas>
             <div class="count">
                 <em>趣味は？</em>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-3 chart">
           <div class="chart" id="chart2">
             <canvas id="myChart2" width="200" height="200"></canvas>
             <div class="count">
                 <em>趣味は？</em>
             </div>
           </div>
-        </div>
+          -->
 
       </div>
     </div>
@@ -828,7 +822,7 @@ jQuery(function($){
   </script>
   <!-- location -->
   <section class="location">
-    <h1 class="content_title">アクセス</h1>
+    <h1 class="content_title">所在地</h1>
     <div class="container text-center">
       <div>
         <h2 style="color:#01044E;">LIVE EST,INC.</h2>
@@ -839,7 +833,7 @@ jQuery(function($){
         </p>
       </div>
     </div>
-    <h1 class="content_title">行き方</h1>
+    <h1 class="content_title">アクセス</h1>
     <div class="container text-center">
         <p style="color:#01044E;">
           JR線　池袋駅　徒歩15分<br>
@@ -962,6 +956,7 @@ jQuery(function($){
 
 
     <!-- 社員の一日 (Tabs) 作成中 -->
+    <h1 class="content_title">社員の一日</h1>
     <section class="tabs">
       <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
         <label for="tab-1" class="tab-label-1">Hashimoto Arika</label>
@@ -1370,22 +1365,27 @@ jQuery(function($){
     // ===================================
     // Chart1
     // ===================================
-    var data = [
-      {
-        value: 50,
-        color:"#fff"
-      },
-      {
-        value : 30,   
-            // Draw with background color
-        color : "#66ccff" 
-      },
-      {
-        value : 20,
-            // Draw with background color
-        color : "#fff" 
-      }
-    ];
+    var data = {
+    labels: [
+        "Red",
+        "Blue",
+        "Yellow"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]    
+    };
     var ctx = document.getElementById("myChart").getContext("2d");
     new Chart(ctx).Doughnut(data,{
       segmentShowStroke : false,

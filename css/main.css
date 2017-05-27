@@ -599,13 +599,14 @@ margin-left: 0.1em;
   text-align: center;
   font-size: ;
 }
-
+/*
 .questionnaire .chart{
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
 }
+*/
 
 .chart {
     position: relative;
@@ -628,32 +629,27 @@ margin-left: 0.1em;
     width: 100%;
     text-align: center;
 }
-
 .chart em {
     display: block;
-    font-size: #01044E;
+    font-size: 50px;
     font-style: normal;
-    color: #fff;
+    color: #01044E;
     line-height: 150px;
 }
-
 .chart .caption {
     position: absolute;
     top: 50px;
     left: 40px;
-    color: #fff;
+    color: #01044E;
 }
-
 #chart2 .count {
     background: url(http://startapp.jp/img/refs/jsfiddle_medium_6628140291.jpg) -20px -20px no-repeat;
 
 }
-
 #chart2 .count em {
-    color: #fff;
+    color: #01044E;
     color: rgba(255, 255, 255, 0.8);
 }
-
 
 /* location */
 .location h2{
