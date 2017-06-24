@@ -223,7 +223,7 @@ margin-left: 0.1em;
 .company .container{
   margin-top: 15ex;
 }
-.company .tittle{
+.company .content_tittle{
   padding-bottom: 40px;
   color: #01044E;
   max-width: 1100px;
@@ -1241,6 +1241,7 @@ footer .container{
 
 .lightbox_demo p.question{
   border-left: 4px solid #01044E;
+  margin-bottom: 30px;
   padding-left: 10px;
   font-size: 1.2em;
   font-weight: bold;
@@ -1251,11 +1252,15 @@ footer .container{
 
 .lightbox_demo p.answer{
   margin-bottom: 6ex;
-  line-height: 1.6em;
+  line-height: 1.8em;
   color: #808080;
   font-size: 0.9em;
 }
-
+.featherlight-close{
+  padding-right:15px;
+  padding-top:5px;
+  font-size: 25pt; 
+}
 
 
 
