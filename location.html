@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>株式会社ライブエスト リクルート</title>
+
+
+  <!-- CSSファイル -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- main.css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- h2vR (縦書き)-->
+    <link href="css/h2vR.css" rel="stylesheet" type="text/css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- light_box -->
+    <link href="css/featherlight.css" rel="stylesheet" media="all">
+    <!-- Chart.js -->
+    <!--
+    <link href="css/chart.css" rel="stylesheet">
+    -->
+    <!-- Chart.js -->
+    <link href="css/drawer.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--light_box-->
+    <script src="js/featherlight.js"></script>
+    <!-- h2vR（縦書き） -->
+    <script src="js/h2vR.js"></script>
+    <script src="js/h2vR_extensions.js"></script>
+    <style type="text/css">
+        .en {
+          color:#fff;
+          font-family: "My Helvetica Neue", "Archivo Narrow", "Open Sans Condensed", "Open Sans", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+          font-size: 16px;
+          line-height: 1.714;
+          letter-spacing: 0em;
+          font-weight: bold;
+          text-align: left;
+        }
+        .ja{
+          color:#fff;
+          font-family: "'My KozMin", "小塚明朝 Pro B", "KozMinPro-Bold", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, serif;
+          font-size: 15px;
+          line-height: 2;
+          letter-spacing: 0.1em;
+          font-weight: bold;
+          text-align: left;
+        }
+        .listA .container{
+          width:100%;
+        }
+        .listA .container{
+          padding-right:0px;
+          padding-left:0px;
+        }
+        .content_title{
+            font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+            text-align:center;
+            font-weight: bold;
+            font-size: 2rem;
+            color:#01044E;
+        }
+        .content_title::after{
+          content: "";
+          display: block;
+          width: 80px;
+          height: 1px;
+          background: #01044E;
+          margin: 20px auto;
+        }
+
+
+    </style>
+    <script>
+      $(function(){
+        $(".headC").click(function(){
+          $(".headB").slideToggle();
+        });
+      });
+    </script>
+  </head>
+
+
+<!-- Header -->
+  <!-- MainMenu -->
+  <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+    </header>
+  <script>
+  $(function() {
+      var map = $('iframe');
+      //あらかじめiframeにpointer-events:noneを掛け、マウスイベントを無効にしておく
+      map.css('pointer-events', 'none');
+      //一度クリックされたらマウスイベントを有効にする
+      $('.map_wrapper').click(function() {
+          map.css('pointer-events', 'auto');
+      });
+      //iframeからマウスが離れたら再度pointer-events:noneを効かせる
+      map.mouseout(function() {
+          map.css('pointer-events', 'none');
+      });
+  });
+  </script>
+  <!-- location -->
+  <section class="location">
+    <h1 class="content_title">所在地</h1>
+    <div class="container text-center">
+      <div>
+        <h2 style="color:#01044E;">LIVE EST,INC.</h2>
+        <p style="color:#01044E;">
+          〒171-0014 東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
+          TEL / FAX　03-6907-1122 / 03-6907-1123<br>
+          <a href="http://live-est.com">http://live-est.com</a>
+        </p>
+      </div>
+    </div>
+    <h1 class="content_title">アクセス</h1>
+    <div class="container text-center">
+        <p style="color:#01044E;">
+          JR線　池袋駅　徒歩15分<br>
+          西武池袋線　池袋駅　徒歩15分<br>
+          東京メトロ　副都心線池袋駅　徒歩10分
+        </p>
+    </div>
+    <div class="map_wrapper" style="width:100%";>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6123412217426!2d139.7072388146615!3d35.735751334588535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5f996b8e35%3A0xa7e75361fd07f47d!2z44CSMTcwLTAwMTQg5p2x5Lqs6YO96LGK5bO25Yy65rGg6KKL77yS5LiB55uu77yW77yY4oiS77yZ!5e0!3m2!1sja!2sjp!4v1481430478674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+    
+    <!-- footer -->
+    <footer>
+    <div class="container">
+      <!-- footA -->
+      <div class="footA">
+        <h2>LIVE EST,INC.</h2>
+        <p>〒171-0014<br>
+           東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
+           TEL / FAX　03-6907-1122 / 03-6907-1123<br>
+           <a href="http://live-est.com">http://live-est.com</a>
+        </p>
+       </div>
+      <!-- footB -->
+      <nav class="footB">
+       <div>
+        <h3>ABOUT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>SUPPORT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      </nav>
+      <!-- footC -->
+      <div class="footC">
+      Copyright (C) 2017 LIVEEST All Rights Reserved.
+      </div>
+    </div>
+    </footer>
+
+  <!-- scriptファイル -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- fontawesome (icon) -->
+    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
+    <!-- iscroll.js -->
+    <script src="js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <!-- tabs (社員のスケジュールで使用しているjQuery) -->
+    <script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+    <!-- vide.js (top動画) -->
+    <script src="js/jquery.vide.min.js"></script>
+    <script>
+      $("#block").vide({
+          volume: 1,
+          playbackRate: 1,
+          muted: true,
+          loop: true,
+          autoplay: true
+      });
+    </script>
+
+
+    <!-- drawer.js (スクリプト)  -->
+    <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+    </script>
+
+  </body>
+</html>

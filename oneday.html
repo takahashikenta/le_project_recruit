@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>株式会社ライブエスト リクルート</title>
+
+
+  <!-- CSSファイル -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- main.css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- h2vR (縦書き)-->
+    <link href="css/h2vR.css" rel="stylesheet" type="text/css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- light_box -->
+    <link href="css/featherlight.css" rel="stylesheet" media="all">
+    <!-- Chart.js -->
+    <!--
+    <link href="css/chart.css" rel="stylesheet">
+    -->
+    <!-- Chart.js -->
+    <link href="css/drawer.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--light_box-->
+    <script src="js/featherlight.js"></script>
+    <!-- h2vR（縦書き） -->
+    <script src="js/h2vR.js"></script>
+    <script src="js/h2vR_extensions.js"></script>
+    <style type="text/css">
+        .en {
+          color:#fff;
+          font-family: "My Helvetica Neue", "Archivo Narrow", "Open Sans Condensed", "Open Sans", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+          font-size: 16px;
+          line-height: 1.714;
+          letter-spacing: 0em;
+          font-weight: bold;
+          text-align: left;
+        }
+        .ja{
+          color:#fff;
+          font-family: "'My KozMin", "小塚明朝 Pro B", "KozMinPro-Bold", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, serif;
+          font-size: 15px;
+          line-height: 2;
+          letter-spacing: 0.1em;
+          font-weight: bold;
+          text-align: left;
+        }
+        .listA .container{
+          width:100%;
+        }
+        .listA .container{
+          padding-right:0px;
+          padding-left:0px;
+        }
+        .content_title{
+            font-family: "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+            text-align:center;
+            font-weight: bold;
+            font-size: 2rem;
+            color:#01044E;
+        }
+        .content_title::after{
+          content: "";
+          display: block;
+          width: 80px;
+          height: 1px;
+          background: #01044E;
+          margin: 20px auto;
+        }
+
+
+    </style>
+    <script>
+      $(function(){
+        $(".headC").click(function(){
+          $(".headB").slideToggle();
+        });
+      });
+    </script>
+  </head>
+
+
+<!-- Header -->
+  <!-- MainMenu -->
+  <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 社員の一日 (Tabs) 作成中 -->
+    <div class="oneday">
+      <h1 class="content_title">社員の一日</h1>
+      <section class="tabs">
+        <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+          <label for="tab-1" class="tab-label-1">Hashimoto Arika</label>
+
+        <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+          <label for="tab-2" class="tab-label-2">Suzuki Masataka</label>
+
+        <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+          <label for="tab-3" class="tab-label-3">Masumura Takuya</label>
+
+        <div class="clear-shadow"></div>
+
+      <div class="content">
+
+      <!-- onedaySection -->
+      <div class="content-1" style="width:100%;"> 
+      <section class="onedaySection">
+
+        <header>
+          <h2><span class="job">セールスリーダー:</span> <span class="name">Hashimoto Arika</span></h2>
+        </header>
+        <div class="scheduleTree">
+
+          <figure class="left"><img src="img/img_business4_01.jpg" alt=""></figure>
+
+          <dl class="right">
+          <dt><time>9:30</time>スケジュール・タスク管理</dt>
+          <dd>
+          メールチェックや各タスクの進捗確認をし、今日のスケジュールを決めます。</dd>
+          </dl>
+
+          <dl class="right">
+          <dt><time>10:00</time>社内の打ち合わせ</dt>
+          <dd>部署内だけでなく他部署とも打ち合わせがあります。1つの営業施策を実施するのにも営業視点、お客様視点、運用視点と様々な視点が必要です。<br>
+          打ち合わせは学ぶポイントが多くあります。 吸収して実行に移しています。</dd>
+          </dl>
+
+          <dl class="left clear">
+          <dt><time>12:00</time>課のメンバーとランチ</dt>
+          <dd>会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。会社の近くのお店でランチ。美味しいご飯を食べてリフレッシュします。</dd>
+          </dl>
+
+          <dl class="left">
+          <dt><time>13:00</time>取引先へ出発</dt>
+          <dd>入社当初は先輩の同行でしたが、2年目からはほぼ1人で商談をしています。<br>
+          どの様に話を進めるかイメージしながら取引先へ向かいます。</dd>
+          </dl>
+
+          <figure class="right"><img src="img/img_business4_02.jpg" alt=""></figure>
+
+          <dl class="left">
+          <dt><time>14:00</time>取引先との打ち合わせ</dt>
+          <dd>提携施策について現状の共有と今後の提案を行います。昔も今も良い緊張感をもち商談が出来ています。
+          </dd>
+          </dl>
+
+          <figure class="left clear"><img src="img/img_business4_03.jpg" alt=""></figure>
+
+          <dl class="right">
+          <dt><time>16:00</time>メール・電話対応</dt>
+          <dd>外出から戻ると、取引先や社内から連絡が入っているので対応します。</dd>
+          </dl>
+
+          <dl class="left clear">
+          <dt><time>17:00</time>施策考案・資料作成</dt>
+          <dd>次の商談や打ち合わせにむけて、施策を考え資料を作ります。<br>
+          煮詰まった時は課のメンバーに相談しながら進めます。
+          </dd>
+          </dl>
+
+          <figure class="right"><img src="img/img_business4_04.jpg" alt=""></figure>
+
+          <dl class="last">
+          <dt><time>20:00</time>帰宅</dt>
+          <dd>
+          <figure><img src="img/img_business4_last.jpg" alt=""></figure>
+          明日以降のタスクとスケジュールを軽く整理して帰路へ。早く帰宅できる日は趣味に時間を使います。
+          </dd>
+          </dl>
+        </div><!-- / .scheduleTree -->
+      </section>
+      <!-- ./onedaySection -->
+      </div>
+      <div class="content-2">
+      <h2>Services</h2>
+                  <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+      <h3>Excellence</h3>
+      <p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
+      </div>
+      <div class="content-3">
+      <h2>Portfolio</h2>
+                  <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+      <h3>Examples</h3>
+      <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
+      </div>
+      </div>
+      </section>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+    <div class="container">
+      <!-- footA -->
+      <div class="footA">
+        <h2>LIVE EST,INC.</h2>
+        <p>〒171-0014<br>
+           東京都豊島区池袋2−68−9　池袋MIBビル5F<br>
+           TEL / FAX　03-6907-1122 / 03-6907-1123<br>
+           <a href="http://live-est.com">http://live-est.com</a>
+        </p>
+       </div>
+      <!-- footB -->
+      <nav class="footB">
+       <div>
+        <h3>ABOUT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>SUPPORT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      </nav>
+      <!-- footC -->
+      <div class="footC">
+      Copyright (C) 2017 LIVEEST All Rights Reserved.
+      </div>
+    </div>
+    </footer>
+
+  <!-- scriptファイル -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- fontawesome (icon) -->
+    <script src="https://use.fontawesome.com/e1c2edca66.js"></script>
+    <!-- iscroll.js -->
+    <script src="js/iscroll.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <!-- tabs (社員のスケジュールで使用しているjQuery) -->
+    <script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+    <!-- vide.js (top動画) -->
+    <script src="js/jquery.vide.min.js"></script>
+
+    <!-- drawer.js (スクリプト)  -->
+    <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+    </script>
+  </body>
+</html>

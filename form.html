@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,315 +110,139 @@
       </nav>
     </header>
 
-<!-- main_movie -->
-<div id="block" data-vide-bg="movie/sample" data-vide-options="position: 0% 50%">
-    <div id="content">LIVEEST</div>
-</div>
-
-<!-- main_test 
-
-  <style>
-#wrapper {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;   /*全体の中央寄せ*/
-}
-#container {
-  width: 100%;
-  margin: 0 auto;   /*中央寄せ*/
-  position: relative;
-}
-.item {
-  margin: px;
-  width: 600px;
-  height: 500px;
-  padding: px;
-  border: 4px solid #fff;
-}
-.item.x2 {
-  width: 300px;
-}
-.item.x3 {
-  width: 300px;
-}
-.item img {
-  width: 100%;
-}
-  </style>
-
-<div id="wrapper">
-  <div id="container">
-    <div class="item"><img src="img/service.jpg"  alt="">
-      <p>title 1</p>
-    </div>
-    <div class="item x2"><img src="img/service.jpg"  alt="">
-      <p>title 2</p>
-    </div>
-    <div class="item x3"><img src="img/service.jpg"  alt="">
-      <p>title 3</p>
-    </div>
-    ...
-  </div>
-</div>
-
- masonry.js (main_test)
-<script src="js/masonry.pkgd.min.js"></script>
-<script>
-jQuery(function($){  
-  $('#container').masonry({
-    itemSelector: '.item',
-    columnWidth: 5, 
-    isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整
-  });  
-});
-</script>-->
-
-
-
-<!-- main_1 -->
-   <section class="listA">
-      <div class="container">
-
-        <article>
-        <a href="le_work.html">
-        <div class="photo1" style="background-image: url(img/service.jpg);">
+    <!-- form_contents -->
+    <div class="form_contents">
+    <form id="form" class="form_part" name="reg_form" action="mail_test.php" method="post">
+      <h1 class="content_title">応募フォーム</h1>
+      <div class="form_space">
+        <div class="form_description">応募は下記のフォームよりお願い致します。フォーム中の「<span class="required">※</span>」印は入力必須項目です。
         </div>
-        <div class="text">
-        <h2>LIVEESTの仕事</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#" data-featherlight="#modal_1">
-        <div class="photo1" style="background-image: url(img/suzuki.jpg);">
-        </div>
-        <div class="text2">
-          <h2>Suzuki Masataka</h2>
-          <p>テクニカルソリューション事業部</p>
-          <p>事業部長</p>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#5c6bc0;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="about_recruit.html">
-        <div class="photo2" style="background-image: url(img/about.jpg);">
-        </div>
-        <div class="text">
-          <h2>採用について</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo2" style="background-image: url(img/hashimoto.jpg);">
-        </div>
-        <div class="text2">
-          <h2>Hashimoto Arika</h2>
-          <p>ITソリューション事業部</p>
-          <p>セールスリーダー</p>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/masumura.jpg);">
-        </div>
-        <div class="text">
-          <h2>Ohkoda Satoshi</h2>
-          <p>ITソリューション事業部</p>
-          <p>営業</p>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/tarukawa.jpg);">
-        </div>
-        <div class="text2">
-          <h2>Tarukawa Shota</h2>
-          <p>テクニカルソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/masumura.jpg);">
-        </div>
-        <div class="text">
-          <h2>Masumura Takuya</h2>
-          <p>テクニカルソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="requirements.html">
-        <div class="photo1" style="background-image: url(img/requirement3.jpg);">
-        </div>
-        <div class="text">
-          <h2>募集要項</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/tarukawa.jpg);">
-        </div>
-        <div class="text">
-          <h2>Masumura Takuya</h2>
-          <p>ITソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/suzuki.jpg);">
-        </div>
-        <div class="text2">
-          <h2>Tarukawa Shota</h2>
-          <p>ITソリューション事業部</p>
-          <p>エンジニア</p>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="oneday.html">
-        <div class="photo1" style="background-image: url(img/requirement3.jpg);">
-        </div>
-        <div class="text">
-          <h2>社員の一日</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="support.html">
-        <div class="photo1" style="background-image: url(img/requirement.jpg);">
-        </div>
-        <div class="text">
-          <h2>成長支援</h2>
-        </div>
-        <div style="top:0;left:0;z-index:100;position:absolute;width:100%;height:100%;opacity:0.7;background-color:#01044E;"></div>
-        </a>
-        </article>
-
-        <article>
-        <a href="form.html">
-        <div class="photo1" style="background-image: url(img/instagram.jpg);">
-        </div>
-        <div class="text">
-          <h2>応募フォーム</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="location.html">
-        <div class="photo1" style="background-image: url(img/facebook.jpg);">
-        </div>
-        <div class="text">
-          <h2>Map</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/instagram.jpg);">
-        </div>
-        <div class="text">
-          <h2>Instagram</h2>
-        </div>
-        </a>
-        </article>
-
-        <article>
-        <a href="#">
-        <div class="photo1" style="background-image: url(img/facebook.jpg);">
-        </div>
-        <div class="text">
-          <h2>facebook</h2>
-        </div>
-        </a>
-        </article>
-
-
-      </div>
-    </section>
-
-
-    <!-- main_2 -->
-    <div class="cd-fixed-bg cd-bg-1 ">
-      <div class="test">
-      <section class="main_word">
-        <div class="container">
-          <div class="row" style="margin:0px 8%;color:#fff;">
-            <div class="col-md-6" style="margin-top:50px;margin-bottom:50px;">
-              <p class="en">
-                Job is ...<br>
-                <br>
-                It is a place to spend a lot of time in my life.<br>
-                That is why,<br>
-                Without fulfillment of work,<br>
-                there is no fulfillment of life.<br>
-                Elegance with boldness,<br />
-                Luxury with street-mind…<br />
-                <br />
-                ARISE of NEW AESTHETICS<br />
-                EVOKE of NEW CULTURE<br />
-                <br />
-                You should know it under the sun<br />
-                But you would NOT under the moon<br />
-                Too free to stay<br />
-                Too sophisticated to remain the same<br />
-                TOMORROW should never fail to transcend TODAY.<br />
-                <br />
-                WE ARE “TOKYO” from BEAUTIFUL CHAOS.<br />
-                35/139 TOKYO - eyewear that enhances your world.
-              </p>
-            </div>
-            <div class="col-md-6 h2vr_0" style="margin-top:50px;margin-bottom:50px;">
-              <p class="ja">
-                【仕事】は、人生の中で多くの時間を費やす場である。<br />
-                だからこそ、＜仕事の充実なくして人生の充実なし＞と考える。<br />
-                どんな仕事でも、その時間は一度しかない人生の貴重な時間だ。<br />
-                <br />
-                <br />
-                そんな人生の貴重な時間を仕事に費やすからこそ、<br />
-                人生をより素晴らしいものにしたいからこそ、<br />
-                私達は本気で、何事にも全力で取り組む。<br />
-                <br />
-                今を楽しみ、人生をより素晴らしいものにする為に、<br />
-                皆様にとって<価値>のある会社にする為に、<br />
-                絶えずチャレンジを続け日々努力をしていく。<br />
-                <br />
-                新しい、挑戦を。新しい、知識を。<br />
-                それが、あなたとライブエストの成長を加速させる。
-              </p>
+        <div class="input_space">
+          <div class="input_title">職種<span class="required">※</span></div>
+          <div class="input_box">
+            <div class="c-input_selectBox">
+              <i class="fa fa-caret-down c-input_selectMark c-input_selectMark--coverColor" aria-hidden="true"></i>
+              <select id="select_1" name="occupation" class="c-input c-input--select" data-validetta="required">
+                <option value="">選んでください</option>
+                <!-- <option value="1">営業</option>
+                <option value="2">事務</option> -->
+                <option value="3">エンジニア</option>
+                <option value="4">デザイナー</option>
+              </select>
             </div>
           </div>
         </div>
-      </section>
+        <div class="input_space">
+          <div class="input_title">氏名<span class="required">※</span></div>
+          <div class="input_box">
+            <input name="kanjiName" size="30" class="p-contact__input c-input" data-validetta="required" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">フリガナ<span class="required">※</span></div>
+          <div class="input_box">
+            <input name="kanaName" size="30" class="p-contact__input c-input" data-validetta="required" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">年齢<span class="required">※</span><span class="c-input__desc">半角数字</span></div>
+          <div class="input_box">
+            <input name="age" size="30" class="p-contact__input c-input" data-validetta="required,number" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">メールアドレス<span class="required">※</span><span class="c-input__desc">半角英数</span></div>
+          <div class="input_box">
+            <input name="emailAddress" size="30" class="p-contact__input c-input" data-validetta="required,email" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">メールアドレス確認<span class="required">※</span><span class="c-input__desc">半角英数</span></div>
+          <div class="input_box">
+            <input name="confirmEmailAddress" size="30" class="p-contact__input c-input" data-validetta="required,email,equalTo[emailAddress]" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">電話番号<span class="required">※</span><span class="c-input__desc">半角</span></div>
+          <div class="input_box">
+            <input name="phoneNumber" class="p-contact__input c-input" data-validetta="required,tel" placeholder="例）03-5459-0488" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">住所</div>
+          <div class="input_box">
+            <div class="p-requirement__groupInput c-input__wrapper">
+              <label class="c-input__label">郵便番号 <span class="c-input__desc">半角数字</span></label>
+              <div class="c-input__group">
+                <i class="c-input__groupMark">〒</i><input name="postNumber" class="p-contact__input c-input c-input__groupInput" type="text">
+              </div>
+            </div>
+            <div class="p-requirement__groupInput c-input__wrapper">
+              <label class="c-input__label">都道府県</label>
+              <div class="c-input__group">
+                <input name="prefectures" class="p-contact__input c-input" type="text">
+              </div>
+            </div>
+            <div class="p-requirement__groupInput c-input__wrapper">
+              <label class="c-input__label">市区町村</label>
+              <div class="c-input__group">
+                <input name="city" class="p-contact__input c-input" type="text">
+              </div>
+            </div>
+            <div class="p-requirement__groupInput c-input__wrapper">
+              <label class="c-input__label">番地以下</label>
+              <div class="c-input__group">
+                <input name="otherCity" class="p-contact__input c-input" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="p-requirement__term p-term">
+        <h3 class="p-term__title">採用応募者の個人情報の取扱いについて</h3>
+        <br>
+            株式会社ライブエスト（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。<br/>
+            <br/>
+            <strong>・個人情報の管理</strong><br/>
+            当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。<br/>
+            <br/>
+            <strong>・個人情報の利用目的</strong><br/>
+            お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用致します。<br/>
+            <br/>
+            <strong>・個人情報の第三者への開示・提供の禁止</strong><br/>
+            当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示致しません。<br/>
+            [A] お客さまの同意がある場合<br/>
+            [B] お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br/>
+            [C] 法令に基づき開示することが必要である場合<br/>
+            <br/>
+            <strong>・個人情報の安全対策</strong><br/>
+            当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。<br/>
+            <br/>
+            <strong>・ご本人の照会</strong><br/>
+            お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させて頂きます。<br/>
+            <br/>
+            <strong>・法令、規範の遵守と見直し</strong><br/>
+            当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、<br/>
+            本ポリシーの内容を適宜見直し、その改善に努めます。<br/>
+      </div>
+      <div class="p-requirement__agree">
+        <div class="p-agree c-input__checkbox">
+          <label class="c-input__checkboxMark" for="iCheck"></label>
+          <label class="c-input__checkboxTick s-hidden" for="iCheck"><i class="fa fa-check"></i></label>
+          <input name="iCheck" id="iCheck" data-validetta="required" type="checkbox">
+          <label for="iCheck" class="c-inputCheckbox">上記の【個人情報の取扱いについて】に同意する</label>
+        </div>
+      </div>
+      <div class="p-requirement__btnList">
+        <button type="submit" class="p-requirement__btn--long c-btn c-btn--colorReverse">送信する
+            <i class="c-btn__fa fa fa-angle-right"></i>
+        </button>
+      </div>
+    </form>
     </div>
+    <!-- ./form_contents -->
 
-
+    
     <!-- footer -->
     <footer>
     <div class="container">
@@ -431,6 +255,69 @@ jQuery(function($){
            <a href="http://live-est.com">http://live-est.com</a>
         </p>
        </div>
+      <!-- footB -->
+      <nav class="footB">
+       <div>
+        <h3>ABOUT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>SUPPORT</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+       <div>
+        <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      <div>
+      <h3>CONTENTS</h3>
+        <ul>
+          <li><a href="#">設立</a></li>
+          <li><a href="#">所在地</a></li>
+          <li><a href="#">地図</a></li>
+          <li><a href="#">スタッフ</a></li>
+        </ul>
+       </div>
+      </nav>
+      <!-- footC -->
+      <div class="footC">
+      Copyright (C) 2017 LIVEEST All Rights Reserved.
+      </div>
+    </div>
+    </footer>
 
     <!-- lightbox(modal) -->
     <div class="lightbox_demo" id="modal_1">

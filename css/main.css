@@ -217,6 +217,12 @@ margin-left: 0.1em;
 
 
 /* company (LIVEESTの仕事) */
+.company{
+  margin-top: 15ex;
+}
+.company .container{
+  margin-top: 15ex;
+}
 .company .tittle{
   padding-bottom: 40px;
   color: #01044E;
@@ -286,6 +292,9 @@ margin-left: 0.1em;
 
 
 /* about_recruit (採用について) */
+.about_recruit{
+  margin-top: 15ex;
+}
 .about_recruit .container{
   color: #01044E;
   max-width: 1000px;
@@ -324,6 +333,9 @@ margin-left: 0.1em;
 
 
 /* requirement (募集要項) */
+.requirement{
+  margin-top: 15ex;
+}
 .requirement .tittle{
   color: #01044E;
   max-width: 1100px;
@@ -397,6 +409,9 @@ margin-left: 0.1em;
 
 
 /* support (成長支援) */
+.support{
+  margin-top: 15ex;
+}
 .support .tittle{
   color: #01044E;
   max-width: 1100px;
@@ -495,6 +510,113 @@ margin-left: 0.1em;
   text-align: center;
 } 
 
+/* oneday（社員の一日） */
+.oneday{
+  margin-top: 15ex;
+}
+.onedaySection{
+  width:705px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  display: block;
+}
+.onedaySection header {
+    margin: 0 0 30px;
+    padding: 10px 20px;
+    background: #f1f1f1 url(../img/bg_section.png) no-repeat;
+}
+.onedaySection header h2 {
+    margin: 0;
+    padding: 0 100px 0 0;
+    color: #333333;
+    font-size: 116%;
+    background: url(../img/ttl.png) no-repeat right center;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.scheduleTree {
+  margin: 0 0.5px 30px;
+  background: white url(../img/bg_01.png) repeat-y 351px top;
+}
+.scheduleTree figure {
+    margin: 0 0 15px;
+    width: 320px;
+    text-align: center;
+      display: block;
+}
+.scheduleTree figure.left {
+  float: left;
+}
+
+.scheduleTree figure.right {
+  float: right;
+}
+.scheduleTree dl {
+    width: 356px;
+    margin: 0 0 15px;
+    padding: 0;
+    line-height: 1.5;
+    border: 1px solid #353535;
+    border-left-width: 1px;
+}
+.scheduleTree dl dt{
+    font-size: 124%;
+}
+.scheduleTree dl.left dt {
+    margin: -1px 0 0;
+    padding: 10px 52px 8px 15px;
+    background: url(../img/bg_02.png) no-repeat 318px -1px;
+}
+.scheduleTree dl.left dd {
+    margin-bottom: -1px;
+    padding: 0 52px 13px 15px;
+    background: url(../img/bg_03.png) repeat-y 318px 0;
+}
+.scheduleTree dl.right dt {
+    margin: -1px 0 0;
+    padding: 10px 15px 8px 52px;
+    background: url(../img/bg_02.png) no-repeat -29px -1px;
+}
+.scheduleTree dl.right dd {
+    margin-bottom: -1px;
+    padding: 0 15px 13px 52px;
+    background: url(../img/bg_03.png) repeat-y -29px 0;
+}
+.scheduleTree dl.last {
+    zoom: 1;
+    clear: both;
+    width: 356px;
+    margin: 0 auto;
+    padding: 20px 33px 12px;
+    background: #fff;
+}
+
+.scheduleTree dl dt time {
+  float: left;
+  margin-bottom: 1px;
+}
+
+.scheduleTree dl.left {
+    float: left;
+    border-right-width: 0;
+}
+.scheduleTree dl.right {
+    float: right;
+    border-left-width: 0;
+}
+.scheduleTree dl dd figure {
+    width: auto;
+    margin: 0 auto 7px;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.scheduleTree time {
+    margin-right: 10px;
+    color: #2799c5;
+}
 
 /* ??? */
 .con_recruit{
@@ -653,6 +775,10 @@ margin-left: 0.1em;
 }
 
 /* location */
+.location{
+  margin-top: 15ex;
+}
+
 .location h2{
   margin: 0;
   padding-top: 20px;
@@ -861,6 +987,108 @@ margin-left: 0.1em;
   padding-left: 15px;
   font-family: Cambria, Georgia, serif;
   border-left: 8px solid rgba(63,148,148, 0.1);
+}
+
+/* form.html（フォーム） */
+.form_contents{
+  margin-top: 15ex;
+}
+.form_part {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.form_space {
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.form_description{
+    margin:30px 0;
+}
+.input_space {
+    width: 100%;
+    padding: 25px 10px;
+    margin-bottom: 5px;
+    background-color: #fafafa;
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.input_title {
+    width: 25%;
+    text-align: left;
+}
+.input_title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.required {
+    color: red;
+    margin: 0 5px;
+}
+.input_box {
+    width: 75%;
+}
+.c-input {
+    background-color: #FFF;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 11px 21px;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.c-input_selectBox {
+    position: relative;
+}
+.c-input_selectMark {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 140%;
+    color: #ccc;
+    pointer-events: none;
+}
+.c-input_selectMark--coverColor {
+    color: black;
+}
+.p-term {
+    border: 1px solid #ccc;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 14px;
+}
+.p-requirement__term {
+    margin: 0 10px 40px;
+}
+.p-term {
+    height: 300px;
 }
 
 
