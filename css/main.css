@@ -137,29 +137,7 @@ margin-left: 0.1em;
   bottom: 0;
   left: 0;
   margin: 10px;
-  color: #fff;
-}
-
-.listA .text2{
-  position: absolute;
-  z-index:1000;
-  bottom: 0;
-  left: 0;
-  margin: 10px;
-  color: #FFF;
-  font-weight: bold;
-}
-.listA .text3{
-  position: absolute;
-  top: 45%;
-  left: 0;
-  margin: 0px;
-  color: #FFF;
-  font-size:1.6em;
-  font-weight: bold;
-  width:100%;
-  height:100%;
-  text-align:center;
+  color: #01044E;
 }
 
 .listA h2{
