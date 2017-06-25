@@ -1233,17 +1233,17 @@ footer .container{
 .lightbox_demo h4{
   font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   color:#01044E;
-  font-size:1.8em;
+  font-size:2.5em;
   font-weight:bold;
   margin-bottom: 2ex;
-  letter-spacing: 0.1em;
+  letter-spacing: em;
 }
 
 .lightbox_demo p.question{
   border-left: 4px solid #01044E;
   margin-bottom: 30px;
   padding-left: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #FFF;
   background-color: #01044E;
@@ -1254,7 +1254,7 @@ footer .container{
   margin-bottom: 6ex;
   line-height: 1.8em;
   color: #808080;
-  font-size: 0.9em;
+  font-size: 1.0em;
 }
 .featherlight-close{
   padding-right:15px;
