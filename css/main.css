@@ -46,13 +46,13 @@ body{
 }
 #content{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 32%;
+  left: 45%;
   margin-left:-3.5em;
   margin-top:-0.5em;
   color:#fff;
   font-weight:bold;
-  font-size:150%;
+  /*font-size:150%;*/
 }
 
 
@@ -1230,13 +1230,26 @@ footer .container{
 }
 
 /* mordal_contents（モーダル画面レイアウト）*/
-.lightbox_demo h4{
+.lightbox_demo .icon_space{
+  float:left;
+  padding-right: 15px;
+}
+.lightbox_demo p.person_title{
   font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+<<<<<<< HEAD
   color:#01044E;
   font-size:2.5em;
   font-weight:bold;
   margin-bottom: 2ex;
   letter-spacing: em;
+=======
+  color: #01044E;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-bottom: 5ex;
+  line-height: 17px;
+>>>>>>> 70c8449efc2623d643401464905b57ad6b288804
 }
 
 .lightbox_demo p.question{
@@ -1257,9 +1270,13 @@ footer .container{
   font-size: 1.0em;
 }
 .featherlight-close{
+  color:gray;
   padding-right:15px;
   padding-top:5px;
   font-size: 25pt; 
+}
+.featherlight-close-icon {
+  color: #696969 !important;
 }
 
 
