@@ -137,7 +137,9 @@ margin-left: 0.1em;
   bottom: 0;
   left: 0;
   margin: 10px;
-  color: #01044E;
+  /*color: #01044E; 文字色変更：20160626*/
+  color:#FFF;
+  font-weight: bold;
 }
 
 .listA h2{
@@ -1223,7 +1225,7 @@ footer .container{
   font-size: 1.7em;
   font-weight: bold;
   padding-top: 15px;
-  margin-bottom: 5ex;
+  margin-bottom: 2.5ex;
   line-height: 17px;
 
 }
