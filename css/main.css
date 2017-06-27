@@ -1044,6 +1044,19 @@ margin-left: 0.1em;
     -webkit-appearance: none;
     appearance: none;
 }
+.multi-input {
+    background-color: #FFF;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 11px 21px;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
 .c-input_selectBox {
     position: relative;
 }
@@ -1070,7 +1083,14 @@ margin-left: 0.1em;
 .p-term {
     height: 300px;
 }
-
+.p-agree{
+  text-align:center;
+}
+.p-requirement__btnList{
+  margin-top:5em;
+  margin-bottom:5em;
+  text-align: center;
+}
 
 /* footer */
 footer{

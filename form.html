@@ -26,7 +26,6 @@
     <!-- Chart.js -->
     <link href="css/drawer.min.css" rel="stylesheet">
 
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -89,6 +88,14 @@
           $(".headB").slideToggle();
         });
       });
+
+      function submitCheck(){
+        if(window.confirm('ご登録内容に間違いはありませんか？\nこの内容で送信します。')){
+          document.form.submit();
+        }else{
+          window.alert('ご登録内容を再度ご確認ください。');
+        }
+      }
     </script>
   </head>
 
@@ -118,25 +125,10 @@
 
     <!-- form_contents -->
     <div class="form_contents">
-    <form id="form" class="form_part" name="reg_form" action="mail_test.php" method="post">
+    <form id="form" class="form_part" name="reg_form" action="submit.php" method="post">
       <h1 class="content_title">応募フォーム</h1>
       <div class="form_space">
         <div class="form_description">応募は下記のフォームよりお願い致します。フォーム中の「<span class="required">※</span>」印は入力必須項目です。
-        </div>
-        <div class="input_space">
-          <div class="input_title">職種<span class="required">※</span></div>
-          <div class="input_box">
-            <div class="c-input_selectBox">
-              <i class="fa fa-caret-down c-input_selectMark c-input_selectMark--coverColor" aria-hidden="true"></i>
-              <select id="select_1" name="occupation" class="c-input c-input--select" data-validetta="required">
-                <option value="">選んでください</option>
-                <!-- <option value="1">営業</option>
-                <option value="2">事務</option> -->
-                <option value="3">エンジニア</option>
-                <option value="4">デザイナー</option>
-              </select>
-            </div>
-          </div>
         </div>
         <div class="input_space">
           <div class="input_title">氏名<span class="required">※</span></div>
@@ -151,9 +143,9 @@
           </div>
         </div>
         <div class="input_space">
-          <div class="input_title">年齢<span class="required">※</span><span class="c-input__desc">半角数字</span></div>
+          <div class="input_title">携帯電話番号<span class="required">※</span><span class="c-input__desc">半角</span></div>
           <div class="input_box">
-            <input name="age" size="30" class="p-contact__input c-input" data-validetta="required,number" type="text">
+            <input name="phoneNumber" class="p-contact__input c-input" data-validetta="required,tel" placeholder="例）03-5459-0488" type="text">
           </div>
         </div>
         <div class="input_space">
@@ -169,11 +161,60 @@
           </div>
         </div>
         <div class="input_space">
-          <div class="input_title">電話番号<span class="required">※</span><span class="c-input__desc">半角</span></div>
+          <div class="input_title">年齢<span class="required">※</span><span class="c-input__desc">半角数字</span></div>
           <div class="input_box">
-            <input name="phoneNumber" class="p-contact__input c-input" data-validetta="required,tel" placeholder="例）03-5459-0488" type="text">
+            <input name="age" size="30" class="p-contact__input c-input" data-validetta="required,number" type="text">
           </div>
         </div>
+        <div class="input_space">
+          <div class="input_title">現在の職業<span class="required">※</span></div>
+          <div class="input_box">
+            <input name="current_job" size="30" class="p-contact__input c-input" data-validetta="required" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">希望職種<span class="required">※</span></div>
+          <div class="input_box">
+            <div class="c-input_selectBox">
+              <i class="fa fa-caret-down c-input_selectMark c-input_selectMark--coverColor" aria-hidden="true"></i>
+              <select id="select_2" name="hope_job" class="c-input c-input--select" data-validetta="required">
+                <option value="">選んでください</option>
+                <option value="エンジニア">エンジニア</option>
+                <option value="デザイナー">デザイナー</option>
+                <option value="事務/サポート">事務/サポート</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">契約形態</div>
+          <div class="input_box">
+            <div class="c-input_selectBox">
+              <i class="fa fa-caret-down c-input_selectMark c-input_selectMark--coverColor" aria-hidden="true"></i>
+              <select id="select_2" name="contract_form" class="c-input c-input--select">
+                <option value="">選んでください</option>
+                <option value="正社員">正社員</option>
+                <option value="契約社員">契約社員</option>
+                <option value="個人事業主">個人事業主</option>
+                <option value="アルバイト">アルバイト</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">お住いの最寄り駅</div>
+          <div class="input_box">
+            <input name="nearest_station" size="30" class="p-contact__input c-input" type="text">
+          </div>
+        </div>
+        <div class="input_space">
+          <div class="input_title">自己PR</div>
+          <div class="input_box">
+            <textarea name="profile" size="30" class="p-contact__input multi-input" type="text" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!--
         <div class="input_space">
           <div class="input_title">住所</div>
           <div class="input_box">
@@ -203,6 +244,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
       <div class="p-requirement__term p-term">
         <h3 class="p-term__title">採用応募者の個人情報の取扱いについて</h3>
@@ -240,7 +282,7 @@
         </div>
       </div>
       <div class="p-requirement__btnList">
-        <button type="submit" class="p-requirement__btn--long c-btn c-btn--colorReverse">送信する
+        <button type="submit" class="btn btn-default">送信する
             <i class="c-btn__fa fa fa-angle-right"></i>
         </button>
       </div>
@@ -881,7 +923,18 @@
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> 
     <!-- Chart.js (スクリプト) -->
+
+    <!-- validetta.js -->
+    <link href="css/validetta.css" rel="stylesheet">
+    <!-- validetta.js -->
+    <script src="js/validetta.js"></script>
+    <script src="js/validettaLang-tr.js"></script>
     <script>
+    // validetta
+    $(function(){
+      $("#form").validetta();
+    });
+
     // ===================================
     // Chart1
     // ===================================
