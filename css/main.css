@@ -112,10 +112,13 @@ margin-left: 0.1em;
   border: solid 1px #ddd;
   background-color: currentColor;
   text-decoration: none;
+  transition-property:color;
+  transition-duration:0.5s;
+  transition-timing-function:ease-out;
 }
-
 .listA a:hover{
   opacity: 0.8;
+  color:#01044E;
 }
 
 .listA .photo1{
