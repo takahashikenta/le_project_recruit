@@ -1095,6 +1095,42 @@ margin-left: 0.1em;
   text-align: center;
 }
 
+/* finish_form (採用について) */
+.finish_form{
+  margin-top: 15ex;
+}
+.finish_form .container{
+  color: #01044E;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+}
+
+.finish_form p{
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+@media (min-width: 599px){
+  .finish_form .container{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px){
+  .finish_form .container{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px){
+  .finish_form .container{
+    font-size: 18px;
+  }
+}
+
 /* footer */
 footer{
   color: #01044E;
