@@ -8,7 +8,9 @@ if(mb_send_mail($_POST[emailAddress], "【要対応】登録テストメール",
 	header("Location: {$url}");
 	exit();
 }else{
-	echo "メールの送信に失敗しました";
+	$url = 'form.html';
+	header("Location: {$url}");
+	exit();
 }
 
 
