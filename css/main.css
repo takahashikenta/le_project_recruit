@@ -766,8 +766,6 @@ margin-left: 0.1em;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #5D9AB2;
-  background-color: var(--main-color);
   color: #fff;
   color: var(--text-bright-color);
   font-size: 1.5rem;
@@ -1062,6 +1060,9 @@ margin-left: 0.1em;
 }
 .c-input_selectBox {
     position: relative;
+}
+select::-ms-expand {
+  display: none;
 }
 .c-input_selectMark {
     position: absolute;
