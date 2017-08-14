@@ -165,12 +165,7 @@ margin-left: 0.1em;
     flex: 1 1 50%;
   }
 }
-/*スマホ時非表示メニュー*/
-@media (max-width: 768px){
-  .sm-hidden{
-    display: none;
-  }
-}  
+
 
 /* main_2 */
 .main_word{
@@ -207,6 +202,7 @@ margin-left: 0.1em;
     display: none;
   }
 }
+
 
 
 /* company (LIVEESTの仕事) */
@@ -1328,5 +1324,10 @@ footer .container{
 }
 
 
-
+/*スマホ時非表示メニュー*/
+@media (max-width: 768px){
+  .sm-hidden{
+    display: none !important;
+  }
+}  
 
