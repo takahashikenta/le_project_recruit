@@ -37,7 +37,6 @@ body{
 /* header */
 /* "css/drawer.min.css"に記述 */
 
-
 /* main_movie
  */
 #block{
@@ -166,7 +165,12 @@ margin-left: 0.1em;
     flex: 1 1 50%;
   }
 }
-  
+/*スマホ時非表示メニュー*/
+@media (max-width: 768px){
+  .sm-hidden{
+    display: none;
+  }
+}  
 
 /* main_2 */
 .main_word{
@@ -197,6 +201,12 @@ margin-left: 0.1em;
   font-weight: bold;
   text-align: center;
 } 
+
+@media (max-width: 768px){
+  .main_word{
+    display: none;
+  }
+}
 
 
 /* company (LIVEESTの仕事) */
