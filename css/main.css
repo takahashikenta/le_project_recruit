@@ -166,45 +166,6 @@ margin-left: 0.1em;
   }
 }
 
-
-/* main_2 */
-.main_word{
-  padding-top: 50px;
-}
-
-.cd-fixed-bg {
-  min-height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.cd-fixed-bg.cd-bg-1{
-  background-image: url("../img/background_test1.jpg");
-  opacity: 0.8;
-}
-
-.cd-fixed-bg.cd-bg-1 h1{
-  padding-top: 200px;
-  text-align: center;
-  font-family:  "MyYuGothic", "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
-  color: #fff;
-  font-size: 25px;
-  line-height: 2.5;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  text-align: center;
-} 
-
-@media (max-width: 768px){
-  .main_word{
-    display: none;
-  }
-}
-
-
-
 /* company (LIVEESTの仕事) */
 .company{
   margin-top: 15ex;
